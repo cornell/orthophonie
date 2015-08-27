@@ -1,0 +1,51 @@
+.nav {
+	text-align: center;
+	background-color: white;
+	border-bottom: solid 3px hsl(0, 0%, 70%);
+	line-height: 3.5rem;
+	color: hsl(0, 0%, 70%)
+}
+
+.nav>li {
+	display: inline-block;
+	width: 24%;
+}
+
+.nav-accueil {
+	padding-bottom: 5px;
+}
+
+.nav-accueil--active {
+	border-bottom: solid 3px black;
+	color: black;	
+}
+
+.nav-prevention {
+	padding-bottom: 5px;
+	/*font-variant: small-caps;*/
+}
+
+.nav-prevention--active {
+	border-bottom: solid 3px #6AA84F;
+	color: black;	
+}
+
+.nav-formation {
+	padding-bottom: 5px;
+	/*font-variant: small-caps;*/
+}
+
+.nav-formation--active {
+	border-bottom: solid 3px #E69138;
+	color: black;	
+}
+
+.nav-recherche {
+	padding-bottom: 5px;
+	/*font-variant: small-caps;*/
+}
+
+.nav-recherche--active {
+	border-bottom: solid 3px #597EAA;
+	color: black;	
+}

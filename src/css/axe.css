@@ -1,0 +1,88 @@
+axe{
+    position:relative;
+}
+
+.axePrevention {
+    background-color: hsl(201, 40%, 66%);
+}
+
+.axeRecherche {
+    background-color: hsl(260, 31%, 72%);
+}
+
+.axeFormation {
+    background-color: hsl(335, 78%, 68%);
+}
+
+.prevention .axePrevention,
+.recherche .axeRecherche,
+.formation .axeFormation {
+    text-align: center;
+}
+
+.axePrevention,
+.axeRecherche,
+.axeFormation{
+    color: white;
+    padding: 25px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.axePrevention-detail,
+.axeRecherche-detail,
+.axeFormation-detail{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.axePrevention-detail {
+    text-shadow: 1px 1px 1px hsl(201, 40%, 60%);
+}
+
+.axeRecherche-detail {
+    text-shadow: 1px 1px 1px hsl(260, 31%, 68%);
+}
+
+.axeFormation-detail {
+    text-shadow: 1px 1px 1px hsl(335, 78%, 64%);
+}
+
+.prevention .axePrevention-detail,
+.recherche .axeRecherche-detail,
+.formation .axeFormation-detail {
+    width: 50%;
+    display: inline-block;
+} 
+
+.axePrevention-image {
+    fill: hsl(201, 40%, 56%);    
+}
+
+
+.axeRecherche-image {
+    fill: hsl(260, 31%, 62%);
+}
+
+.axeFormation-image {
+    fill: hsl(335, 78%, 58%);
+}
+
+.axePrevention-image,
+.axeRecherche-image,
+.axeFormation-image {
+    height: 70px;
+}
+
+.axePrevention-titre,
+.axeRecherche-titre {
+    margin-left: -20px;
+}
+
+.axePrevention-titre,
+.axeRecherche-titre,
+.axeFormation-titre{
+    font-size: 30px;
+    font-variant: small-caps;
+    display: inline-block;
+}

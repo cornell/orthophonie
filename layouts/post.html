@@ -1,0 +1,21 @@
+{{>header}}
+{{> nav}}
+<div class="post">
+    <div class="article">
+        <!--<div class="article-image"><img src="./img/150x150.gif" alt=""></div>-->
+        <h1 class="article-titre" href="/{{path}}">{{titre}}</h1>
+        <div class="article-detail">
+            <span class="icon-calendar"></span>
+            <span class="article-date u-mlxs">{{dateAffichage}}</span>
+  {{#ville}}<span class="icon-location u-mlm"></span>
+            <span class="article-ville u-mlxs">{{ville}}</span>{{/ville}}
+        </div>
+        <div>
+            <div class="article-contenu">
+                <span class="article-resume ellipsis">{{&contents}}</span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+{{>footer}}

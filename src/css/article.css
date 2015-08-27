@@ -1,0 +1,139 @@
+/* --------------------------------------------------------
+    $ARTICLE
+   ------------------------------------------------------*/
+.article,
+.membreBureau {
+    border-bottom: solid 1px hsl(0,0%,70%);
+    background-color: hsl(0,0%,100%);    
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    /*margin-top: 25px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;    */
+/*    cursor: pointer;*/
+}
+
+.article-titre,
+.membreBureau-fonction{
+    font-size: 22px;
+    color: hsl(0,0%,25%);
+    line-height: 1.1;
+}
+
+.article-detail {
+    margin-top: 0;
+}
+
+.article-date,
+.article-ville,
+.article-lieu{
+    font-size: 14px;
+    color: hsl(0, 0%, 55%);
+}
+
+.article-contenu {
+    margin-top: 10px;
+    position: relative;
+}
+
+.article-resume {
+    color: hsl(0,0%,30%);
+    margin-top: 10px;
+    /*margin-right: 25px;*/
+}
+
+.article-date {
+    display: inline-block;
+}
+
+.article-lieu {
+    display: inline-block;
+}
+
+.ellipsis {
+/*  white-space: nowrap;*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+.article-lien {
+    color: #3498db;
+    bottom: 0;
+    float: right;
+    margin-right: 50px;
+}
+
+.article-lien-logo {
+    color: #3498db;
+    margin-top: 2px;
+    display: inline-block;
+    margin-top: 3px;
+    vertical-align: top;
+}
+.clear {
+    clear: both;
+}
+
+.u-mlxs {
+    margin-left: 5px;
+}
+
+.u-mls {
+    margin-left: 10px;
+}
+
+.u-mlm {
+    margin-left: 20px;
+}
+
+.readMore {
+    border: 2px solid;
+    float: right;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.readMore:hover {
+    background-color: #f2f2f2;
+}
+
+.post h1 {
+    
+}
+
+.post h2 {
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+.post h3 {
+    margin-top: 15px;
+}
+
+.post h4 {
+    
+}
+
+.post h5 {
+    
+}
+
+.post p {
+    margin-top: 15px;
+}
+
+.post ul {
+    margin-left: 10px;
+}
+
+.post li {
+    
+}
+
+.post strong {
+    
+}
