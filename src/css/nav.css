@@ -15,6 +15,7 @@
 	padding-bottom: 5px;
 }
 
+.nav-accueil:hover,
 .nav-accueil--active {
 	border-bottom: solid 3px hsl(0, 0%, 20%);
 	color: hsl(0, 0%, 20%);	
@@ -25,6 +26,7 @@
 	/*font-variant: small-caps;*/
 }
 
+.nav-prevention:hover,
 .nav-prevention--active {
 	border-bottom: solid 3px #85B2CA;
 	color: hsl(0, 0%, 20%);	
@@ -35,6 +37,7 @@
 	/*font-variant: small-caps;*/
 }
 
+.nav-recherche:hover,
 .nav-recherche--active {
 	border-bottom: solid 3px #B0A1CD;
 	color: hsl(0, 0%, 20%);	
@@ -45,6 +48,7 @@
 	/*font-variant: small-caps;*/
 }
 
+.nav-formation:hover,
 .nav-formation--active {
 	border-bottom: solid 3px #ED6DA2;
 	color: hsl(0, 0%, 20%);	

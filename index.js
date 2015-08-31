@@ -41,10 +41,22 @@ Handlebars.registerHelper('isAxeFormation', function(options){
 metalsmith(__dirname)
     .use(collections({
         pages: {
-            pattern: 'content/pages/*.md'
+            pattern: 'content/*.md'
         },
         posts: {
             pattern: 'content/posts/*.md',
+            reverse: true
+        },
+        prevention: {
+            pattern: 'content/prevention/*.md',
+            reverse: true
+        },
+        recherche: {
+            pattern: 'content/recherche/*.md',
+            reverse: true
+        },
+        formation: {
+            pattern: 'content/formation/*.md',
             reverse: true
         }
     }))
