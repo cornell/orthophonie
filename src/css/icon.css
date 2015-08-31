@@ -15,7 +15,7 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-    color: hsl(0, 0%, 55%);
+    /*color: hsl(0, 0%, 55%);*/
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;

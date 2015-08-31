@@ -11,7 +11,6 @@
   "devDependencies": {
     "handlebars": "^3.0.3",
     "harmonize": "^1.4.4",
-    "metalsmith": "file:metalsmith",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-in-place": "^1.2.1",
     "metalsmith-layouts": "^1.2.1",

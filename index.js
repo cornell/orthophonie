@@ -74,7 +74,9 @@ metalsmith(__dirname)
              axe: 'partials/axe',
              axePrevention: 'partials/axe-prevention',
              axeRecherche: 'partials/axe-recherche',
-             axeFormation: 'partials/axe-formation'
+             axeFormation: 'partials/axe-formation',
+             articleResume: 'partials/article-resume',
+             articleInfo: 'partials/article-info'
        }
     }))
     .destination('./dist')

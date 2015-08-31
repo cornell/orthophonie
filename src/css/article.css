@@ -1,7 +1,7 @@
 /* --------------------------------------------------------
     $ARTICLE
    ------------------------------------------------------*/
-.article,
+.articleResume,
 .membreBureau {
     border-bottom: solid 1px hsl(0,0%,70%);
     background-color: hsl(0,0%,100%);    
@@ -22,26 +22,20 @@
     line-height: 1.1;
 }
 
-.article-detail {
-    margin-top: 0;
+.article-info {
+    color: hsla(0,0%,0%, 0.55);
 }
-
+/*
 .article-date,
-.article-ville,
+.article,
 .article-lieu{
     font-size: 14px;
     color: hsl(0, 0%, 55%);
 }
-
+*/
 .article-contenu {
     margin-top: 10px;
     position: relative;
-}
-
-.article-resume {
-    color: hsl(0,0%,30%);
-    margin-top: 10px;
-    /*margin-right: 25px;*/
 }
 
 .article-date {
@@ -99,41 +93,4 @@
 
 .readMore:hover {
     background-color: #f2f2f2;
-}
-
-.post h1 {
-    
-}
-
-.post h2 {
-    margin-top: 30px;
-    font-size: 1.3em;
-}
-
-.post h3 {
-    margin-top: 15px;
-}
-
-.post h4 {
-    
-}
-
-.post h5 {
-    
-}
-
-.post p {
-    margin-top: 15px;
-}
-
-.post ul {
-    margin-left: 10px;
-}
-
-.post li {
-    
-}
-
-.post strong {
-    
 }

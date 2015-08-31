@@ -4,33 +4,15 @@
     {{> axeRecherche}}
 </div>
 <!--<h2>{{titre}}</h2>-->
-<article>
+<div id="js-recherche">
     <ul>
         {{#each collections.recherche}}
             {{#isAxeRecherche}}
             <li>
-                <div class="articleResume">
-                    <!--<div class="articleResume-image"><img src="./img/150x150.gif" alt=""></div>-->
-                    <a class="articleResume-titre" href="/{{path}}">{{titre}}</a>
-                    <div class="articleResume-detail">
-                        <span class="icon-calendar"></span>
-                        <span class="articleResume-date u-mlxs">{{dateAffichage}}</span>
-                        <span class="icon-location u-mlm"></span>
-                        <span class="articleResume-ville u-mlxs">{{ville}} ({{departement}})</span>
-                    </div>
-                    <div>
-                        <div class="articleResume-contenu">
-                            <span class="articleResume-resume ellipsis">{{&resume}}</span><span>...</span>
-                            <div class="readMore">
-                                <a href="/{{path}}">Lire l'article</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+                {{> articleResume}}
             </li>
             {{/isAxeRecherche}}
         {{/each}}
     </ul>
-</article>
+</div>
 {{> footer}}
