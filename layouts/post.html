@@ -1,22 +1,12 @@
 {{>header}}
 {{> nav}}
-{{#isAxePrevention}}
-<div class="prevention">
-    {{> axePrevention}}
+<div id="js-{{axe}}" class="{{axe}}">
+    {{#isAxePrevention}}{{> axePrevention}}{{/isAxePrevention}}
+    {{#isAxeRecherche}}{{> axeRecherche}}{{/isAxeRecherche}}
+    {{#isAxeFormation}}{{> axeFormation}}{{/isAxeFormation}}
+    <article class="articleDetail">
+        {{> articleInfo}}
+        {{&contents}}
+    </article>
 </div>
-{{/isAxePrevention}}
-{{#isAxeRecherche}}
-<div class="recherche">
-    {{> axeRecherche}}
-</div>
-{{/isAxeRecherche}}
-{{#isAxeFormation}}
-<div class="formation">
-    {{> axeFormation}}
-</div>
-{{/isAxeFormation}}
-<article id="js-{{axe}}" class="articleDetail">
-    {{> articleInfo}}
-    {{&contents}}
-</article>
 {{>footer}}

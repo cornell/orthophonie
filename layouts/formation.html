@@ -1,18 +1,15 @@
 {{> header}}
 {{> nav}}
-<div class="formation">
+<div id="js-formation" class="formation">
     {{> axeFormation}}
-</div>
-<!--<h2>{{titre}}</h2>-->
-<div id="js-formation">
     <ul>
-        {{#each collections.formation}}
+    {{#each collections.formation}}
         {{#isAxeFormation}}
-            <li>
-                {{> articleResume}}
-            </li>
+        <li>
+            {{> articleResume}}
+        </li>
         {{/isAxeFormation}}
-        {{/each}}
+    {{/each}}
     </ul>
 </div>
 {{> footer}}

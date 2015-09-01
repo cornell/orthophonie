@@ -1,19 +1,6 @@
 .articleDetail {
     background-color: hsl(0,0%,100%);    
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 20px;
-}
-
-.articleDetail-titre {
-    font-size: 22px;
-    color: hsl(0,0%,25%);
-    line-height: 1.1;
-}
-    
-.articleDetail h1 {
-    
+    padding: 20px 25px;
 }
 
 .articleDetail h2 {
@@ -25,14 +12,6 @@
     margin-top: 15px;
 }
 
-.articleDetail h4 {
-    
-}
-
-.articleDetail h5 {
-    
-}
-
 .articleDetail p {
     margin-top: 15px;
 }
@@ -41,10 +20,29 @@
     margin-left: 10px;
 }
 
-.articleDetail li {
-    
+.prevention a,
+.prevention h1,
+.prevention h2,
+.prevention h3,
+.prevention h4,
+.prevention h5 {
+    color: hsl(201, 40%, 56%);
 }
 
-.articleDetail strong {
-    
+.recherche a,
+.recherche h1,
+.recherche h2,
+.recherche h3,
+.recherche h4,
+.recherche h5 {
+    color: hsl(260, 31%, 62%);
+}
+
+.formation a,
+.formation h1,
+.formation h2,
+.formation h3,
+.formation h4,
+.formation h5 {
+    color: hsl(335, 78%, 58%);
 }

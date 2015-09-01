@@ -1,18 +1,15 @@
 {{> header}}
 {{> nav}}
-<div class="prevention">
+<div id="js-prevention" class="prevention">
     {{> axePrevention}}
-</div>
-<!--<h2>{{titre}}</h2>-->
-<div id="js-prevention">
     <ul>
-        {{#each collections.prevention}}
-            {{#isAxePrevention}}
-            <li>
-                {{> articleResume}}
-            </li>
-            {{/isAxePrevention}}
-        {{/each}}
+    {{#each collections.prevention}}
+        {{#isAxePrevention}}
+        <li>
+            {{> articleResume}}
+        </li>
+        {{/isAxePrevention}}
+    {{/each}}
     </ul>
 </div>
 {{> footer}}

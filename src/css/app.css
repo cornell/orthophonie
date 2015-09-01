@@ -1,6 +1,7 @@
 html {
     font-family: 'font-regular';
     line-height: 1.4rem;
+    color: hsla(0, 0%, 0%, .7);
 }
 
 h1, 

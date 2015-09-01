@@ -1,18 +1,15 @@
 {{> header}}
 {{> nav}}
-<div class="recherche">
+<div id="js-recherche" class="recherche">
     {{> axeRecherche}}
-</div>
-<!--<h2>{{titre}}</h2>-->
-<div id="js-recherche">
     <ul>
-        {{#each collections.recherche}}
-            {{#isAxeRecherche}}
-            <li>
-                {{> articleResume}}
-            </li>
-            {{/isAxeRecherche}}
-        {{/each}}
+    {{#each collections.recherche}}
+        {{#isAxeRecherche}}
+        <li>
+            {{> articleResume}}
+        </li>
+        {{/isAxeRecherche}}
+    {{/each}}
     </ul>
 </div>
 {{> footer}}

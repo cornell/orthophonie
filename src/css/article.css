@@ -3,7 +3,7 @@
    ------------------------------------------------------*/
 .articleResume,
 .membreBureau {
-    border-bottom: solid 1px hsl(0,0%,70%);
+    border-bottom: solid 1px hsla(0,0%,0%, 0.3);
     background-color: hsl(0,0%,100%);    
     padding-top: 20px;
     padding-left: 25px;
@@ -17,13 +17,13 @@
 
 .article-titre,
 .membreBureau-fonction{
-    font-size: 22px;
-    color: hsl(0,0%,25%);
+    font-size: 21px;    
     line-height: 1.1;
 }
 
 .article-info {
-    color: hsla(0,0%,0%, 0.55);
+    font-size: .9rem;
+    color: hsla(0,0%,0%, 0.5);
 }
 /*
 .article-date,
@@ -84,13 +84,10 @@
 }
 
 .readMore {
-    border: 2px solid;
     float: right;
-    padding: 5px;
     margin-top: 10px;
-    cursor: pointer;
+    font-size: .9em;
 }
 
 .readMore:hover {
-    background-color: #f2f2f2;
 }
