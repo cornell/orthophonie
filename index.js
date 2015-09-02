@@ -68,7 +68,7 @@ metalsmith(__dirname)
         engine: 'handlebars',
         // directory: 'layouts',
         partials: {
-             header: 'partials/header',
+             header: 'partials/header.concat',
              footer: 'partials/footer',
              nav: 'partials/nav',
              axe: 'partials/axe',

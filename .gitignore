@@ -4,3 +4,5 @@ dist
 report
 coverage
 Code
+combined-*.css
+header.*.html
