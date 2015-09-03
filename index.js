@@ -41,7 +41,7 @@ Handlebars.registerHelper('isAxeFormation', function(options){
 metalsmith(__dirname)
     .use(collections({
         pages: {
-            pattern: 'content/*.md'
+            pattern: 'content/pages/*.md'
         },
         posts: {
             pattern: 'content/posts/*.md',
