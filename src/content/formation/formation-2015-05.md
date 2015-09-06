@@ -14,10 +14,18 @@ ogdpc:
     - reference: 32621500007 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/58625
 documents:
-    - contrat-formation-dpc.pdf
-    - contrat-formation-fif-pl.pdf
-    - convention-formation-salarie.pdf    
-    - reglement-interieur-formation-apropos.pdf
+    - 
+        - contrat-formation-dpc.pdf
+        - contrat de formation DPC
+    - 
+        - contrat-formation-fif-pl.pdf
+        - contrat de formation FIF-PL
+    - 
+        - convention-formation-salarie.pdf
+        - convention de formation salarié
+    - 
+        - reglement-interieur-formation-apropos.pdf
+        - réglement intérieur formation "a propos"
 ---
 La plainte attentionnelle est quasi constante lors de l’anamnèse des patients avec des 
 troubles du langage écrit avec la question d’un trouble attentionnel sous-jacent. 

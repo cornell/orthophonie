@@ -15,10 +15,18 @@ ogdpc:
     - reference: 32621500003 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/48825
 documents:
-    - contrat-formation-dpc.pdf
-    - contrat-formation-fif-pl.pdf
-    - convention-formation-salarie.pdf    
-    - reglement-interieur-formation-apropos.pdf
+    - 
+        - contrat-formation-dpc.pdf
+        - contrat de formation DPC
+    - 
+        - contrat-formation-fif-pl.pdf
+        - contrat de formation FIF-PL
+    - 
+        - convention-formation-salarie.pdf
+        - convention de formation salarié
+    - 
+        - reglement-interieur-formation-apropos.pdf
+        - réglement intérieur formation "a propos"
 ---
 <!--A Plougonvelin (près de Brest), 5 et 6 mars 2015-->
 <!--Formation accessible DPC et FIF-PL-->

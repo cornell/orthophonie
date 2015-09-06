@@ -41,7 +41,7 @@ gulp.task('mv', function(){
 		.pipe(gulp.dest('dist/a-propos'));		
 });
 
-gulp.task('mv-and-clean', ['mv'], function(){
+gulp.task('mv-clean', ['mv'], function(){
 	
 	del('dist/pages')
 });
@@ -52,6 +52,12 @@ gulp.task('replace', function(){
 		.pipe(replace('href="../../src/css/combined', 'href="css/combined'))
 		.pipe(replace('href="/pages/', 'href="'))
 		.pipe(gulp.dest('dist'));
+
+	gulp.src(['dist/posts/**/index.html'])
+		.pipe(replace('href="../../src/css/combined', 'href="../../css/combined'))
+		.pipe(replace('href="/pages/index', 'href="../../index.html'))
+		.pipe(replace('href="/pages/', 'href="../../'))
+		.pipe(gulp.dest('dist/posts'));
 	
 	gulp.src(['dist/formation/index.html'])
 		.pipe(replace('href="../../src/css/combined', 'href="../css/combined'))

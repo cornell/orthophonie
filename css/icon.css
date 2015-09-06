@@ -28,9 +28,9 @@
 .icon-location:before {
 	content: "\f041";
 }
-.icon-angle-right:before {
-	content: "\f105";
-}
 .icon-calendar:before {
 	content: "\f133";
+}
+.icon-pdf:before {
+	content: "\f1c1";
 }

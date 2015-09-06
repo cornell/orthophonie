@@ -7,6 +7,13 @@
     <article class="articleDetail">
         {{> articleInfo}}
         {{&contents}}
+        <ul>
+        {{#each documents}}
+        <li>
+            <a href="assets/posts/formation-2015-01/{{@key}}"><span class="icon-pdf">{{this}}</span></a>
+        </li>
+        {{/each}}
+        </ul>
     </article>
 </div>
 {{>footer}}

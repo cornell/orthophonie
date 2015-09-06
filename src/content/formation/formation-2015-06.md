@@ -15,10 +15,18 @@ ogdpc:
     - reference: 32621500001 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/48822
 documents:
-    - contrat-formation-dpc.pdf
-    - contrat-formation-fif-pl.pdf
-    - convention-formation-salarie.pdf    
-    - reglement-interieur-formation-apropos.pdf
+    - 
+        - contrat-formation-dpc.pdf
+        - contrat de formation DPC
+    - 
+        - contrat-formation-fif-pl.pdf
+        - contrat de formation FIF-PL
+    - 
+        - convention-formation-salarie.pdf
+        - convention de formation salarié
+    - 
+        - reglement-interieur-formation-apropos.pdf
+        - réglement intérieur formation "a propos"
 ---
 Le travail  d’accompagnement parental  s’appuie  sur le principe développé par les interactionnistes : face à un enfant en difficulté de langage, le parent perd ses compétences d’étayage dans l’échange et accentue ainsi la problématique.
  

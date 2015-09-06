@@ -16,7 +16,9 @@ ogdpc:
     - reference: 32621500012 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/77561
 documents:
-    - reglement-interieur-formation-apropos.pdf
+    - 
+        - reglement-interieur-formation-apropos.pdf
+        - réglement intérieur formation "a propos"
 ---
 ## Objectifs pédagogiques
 

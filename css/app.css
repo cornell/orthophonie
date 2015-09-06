@@ -1,5 +1,5 @@
 html {
-    font-family: 'font-regular';
+    font-family: 'font-regular', sans-serif;
     line-height: 1.4rem;
     color: hsla(0, 0%, 0%, .7);
 }
