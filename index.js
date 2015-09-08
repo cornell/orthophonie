@@ -5,6 +5,9 @@ var metalsmith = require('metalsmith'),
     templates = require('metalsmith-in-place'),
     collections = require('metalsmith-collections'),
     permalinks = require('metalsmith-permalinks'),
+    filenames = require('metalsmith-filenames'),
+    excerpts = require('metalsmith-excerpts'),
+    myPlugin = require('metalsmith-my-plugin'),
     Handlebars = require('handlebars'),
     fs = require('fs');
 
@@ -38,7 +41,7 @@ Handlebars.registerHelper('isAxeFormation', function(options){
         return options.inverse(this);
 });
 
-metalsmith(__dirname)
+metalsmith(__dirname)    
     .use(collections({
         pages: {
             pattern: 'content/pages/*.md'
@@ -60,7 +63,10 @@ metalsmith(__dirname)
             reverse: true
         }
     }))
+    .use(filenames())
+    .use(myPlugin())
     .use(markdown())
+    .use(excerpts())
     .use(permalinks({
         pattern: ':collection/:titre'
     }))

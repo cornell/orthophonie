@@ -2,7 +2,6 @@
 titre: "Fête du livre jeunesse à Scrignac"
 axe: "prevention"
 type: "annonce"
-resume: "Table ronde sur les troubles des apprentissages animée par un(e) orthophoniste\nL’association \"Par monts et par livres\" qui organise sa 2ème fête du livre jeunesse a sollicité A Propos pour trouver"
 date: 2015-06-06
 dateAffichage: "6 juin 2015"
 departement: "29"

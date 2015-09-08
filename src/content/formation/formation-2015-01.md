@@ -4,9 +4,7 @@ dateAffichage: 2015
 axe: formation
 layout: post.html
 documents:
-    - 
-        - bulletin-adhesion-2015.pdf
-        - bulletin d'adhésion 2015
+    bulletin-adhesion-2015.pdf: bulletin d'adhésion 2015
 ---
 Vous aimez l’orthophonie et souhaitez que votre métier soit mieux connu du plus grand nombre ?
 

@@ -2,7 +2,6 @@
 titre: "Affiche \"pas de TV avant 3 ans, pourquoi ?\""
 axe: "prevention"
 type: "annonce"
-resume: "Elaboration d’un affiche sur les dangers de la télé avant 3 ans"
 dateAffichage: "2015"
 departement: 29
 ville: Scrignac

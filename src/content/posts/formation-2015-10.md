@@ -1,5 +1,5 @@
 ---
-titre: Fentes faciales et incompétence vélo-pharyngée : bilan et prise en charge du nourrisson à l’adulte
+titre: Fentes faciales et incompétence vélo-pharyngée; bilan et prise en charge du nourrisson à l’adulte
 axe: formation
 layout: post.html
 ville: Brest

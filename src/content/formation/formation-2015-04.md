@@ -15,18 +15,10 @@ ogdpc:
     - reference: 32621500003 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/48825
 documents:
-    - 
-        - contrat-formation-dpc.pdf
-        - contrat de formation DPC
-    - 
-        - contrat-formation-fif-pl.pdf
-        - contrat de formation FIF-PL
-    - 
-        - convention-formation-salarie.pdf
-        - convention de formation salarié
-    - 
-        - reglement-interieur-formation-apropos.pdf
-        - réglement intérieur formation "a propos"
+    contrat-formation-dpc.pdf: contrat de formation DPC
+    contrat-formation-fif-pl.pdf: contrat de formation FIF-PL
+    convention-formation-salarie.pdf: convention de formation salarié
+    reglement-interieur-formation-apropos.pdf: réglement intérieur formation "a propos"
 ---
 <!--A Plougonvelin (près de Brest), 5 et 6 mars 2015-->
 <!--Formation accessible DPC et FIF-PL-->
@@ -86,9 +78,11 @@ N° de référence du programme : 32621500003 session 1
 -->
 Si vous souhaitez vous pré-inscrire, merci de retourner à A Propos 3 allée du stade 22680 Etables/Mer le contrat ou la convention correspondant à votre situation, signé, accompagné du chèque de réservation et de l’enveloppe timbrée à votre nom (seuls les dossiers complets seront retenus)
 
-Documents joints
+## Documents joints
+<!--
     
     Contrat de formation DPC (PDF – 544.9 ko)
     Contrat de formation FIF-PL (PDF – 473.1 ko)
     Convention de formation salarié(e)s (PDF – 543.6 ko)
     Règlement intérieur A Propos (PDF – 413.8 ko)
+-->

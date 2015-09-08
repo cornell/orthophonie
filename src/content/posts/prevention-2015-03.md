@@ -1,7 +1,6 @@
 ---
 titre: "Sensibilisation à l’apport de l’orthophonie dans le cadre de la presbyacousie"
 axe: prevention
-resume: "Dans le cadre de la Journée Nationale de l'Audition (JNA), une orthophoniste d’A Propos s’est rendue le 11 mars à la résidence \"L'arbre d'or\" à Laillé (35) où l'attendait une trentaine de personnes, venues témoigner de leur ..."
 type: "annonce"
 date: 2015-10-03
 dateAffichage: "3 novembre 2015"

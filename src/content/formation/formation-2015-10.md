@@ -1,5 +1,5 @@
 ---
-titre: Fentes faciales et incompétence vélo-pharyngée : bilan et prise en charge du nourrisson à l’adulte
+titre: Fentes faciales et incompétence vélo-pharyngée; bilan et prise en charge du nourrisson à l’adulte
 axe: formation
 layout: post.html
 ville: Brest
@@ -16,9 +16,7 @@ ogdpc:
     - reference: 32621500012 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/77561
 documents:
-    - 
-        - reglement-interieur-formation-apropos.pdf
-        - réglement intérieur formation "a propos"
+    reglement-interieur-formation-apropos.pdf: réglement intérieur formation "a propos"
 ---
 ## Objectifs pédagogiques
 
@@ -105,6 +103,7 @@ A Propos
 
 le contrat ou la convention correspondant à votre situation, signé, accompagné du chèque de réservation et de l’enveloppe timbrée à votre nom et adresse (seuls les dossiers complets seront retenus)
 
+<!--
 [Règlement intérieur A Propos](http://www.a-propos-d-orthophonie.fr/IMG/pdf/reglement_interieur_formations_ap.pdf)
 
 [Contrat de formation DPC](http://www.a-propos-d-orthophonie.fr/IMG/pdf/contrat_de_formation_dpc_-signed.pdf)
@@ -114,3 +113,4 @@ le contrat ou la convention correspondant à votre situation, signé, accompagn�
 [Convention de formation salarié(e)s](http://www.a-propos-d-orthophonie.fr/IMG/pdf/convention_de_formation__salarie_s__-signed.pdf)
 
 [Programme de la formation](http://www.a-propos-d-orthophonie.fr/IMG/pdf/programme_dpc.pdf)
+-->

@@ -16,18 +16,10 @@ ogdpc:
     - reference: 32621500009 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/66713
 documents:
-    - 
-        - contrat-formation-dpc.pdf
-        - contrat de formation DPC
-    - 
-        - contrat-formation-hors-dpc.pdf
-        - contrat de formation hors DPC
-    - 
-        - convention-formation-salarie.pdf
-        - convention de formation salarié
-    - 
-        - reglement-interieur-formation-apropos.pdf
-        - réglement intérieur formation "a propos"
+    contrat-formation-dpc.pdf: contrat de formation DPC
+    contrat-formation-hors-dpc.pdf: contrat de formation hors DPC
+    convention-formation-salarie.pdf: convention de formation salarié
+    reglement-interieur-formation-apropos.pdf: réglement intérieur formation "a propos"
 ---
 <!--Animé par Marie-Emmanuelle Idiart, orthophoniste et Cécilia Galbiati, ergothérapeute-->
 <!--Formation accessible DPC et FIF-PL-->
@@ -148,10 +140,12 @@ Si vous souhaitez vous pré-inscrire, merci de retourner à
 
 le contrat ou la convention correspondant à votre situation, signé, accompagné du chèque de réservation et de l’enveloppe timbrée à votre nom (seuls les dossiers complets seront retenus)
 
-Documents joints
+### Documents joints
 
+<!--
     Règlement intérieur A Propos (PDF – 413.8 ko)
     Contrat de formation DPC (PDF – 549.3 ko)
     Convention de formation salarié(e)s (PDF – 544.6 ko)
     Programme (PDF – 112.3 ko)
     contrat de formation FIF-PL (PDF – 477.3 ko)
+-->

@@ -92,3 +92,19 @@
 
 .readMore:hover {
 }
+
+.pdf-bloc{
+    margin-top: 5px;
+}
+
+.pdf-descriptionFichier {
+    font-size: .9rem;
+    margin-left: 10px;    
+}
+
+.pdf-nomFichier {
+    font-size: 0.75rem;
+    margin-left: 24px;
+    margin-top: -5px;
+    color: hsla(0, 0%, 0%, 0.5);
+}
