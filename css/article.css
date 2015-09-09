@@ -23,7 +23,7 @@
 
 .article-info {
     font-size: .9rem;
-    color: hsla(0,0%,0%, 0.5);
+    color: hsla(0,0%,0%, 0.55);
 }
 /*
 .article-date,
@@ -106,5 +106,5 @@
     font-size: 0.75rem;
     margin-left: 24px;
     margin-top: -5px;
-    color: hsla(0, 0%, 0%, 0.5);
+    color: hsla(0, 0%, 0%, 0.55);
 }

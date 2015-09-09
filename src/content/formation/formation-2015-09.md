@@ -15,11 +15,10 @@ ogdpc:
     - reference: 32621500011 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/73386
 documents:
-contrat-formation-dpc.pdf: contrat de formation DPC
-contrat-formation-fif-pl.pdf: contrat de formation FIF-PL    
-contrat-formation-hors-dpc.pdf: contrat de formation hors DPC
-convention-formation-salarie.pdf: convention de formation salarié
-reglement-interieur-formation-apropos.pdf: réglement intérieur formation "a propos"
+    contrat-formation-dpc.pdf: contrat de formation DPC
+    contrat-formation-fif-pl.pdf: contrat de formation FIF-PL    
+    contrat-formation-hors-dpc.pdf: contrat de formation hors DPC
+    convention-formation-salarie.pdf: convention de formation salarié
 ---
 
 ## Objectifs pédagogiques des 2 premiers jours

@@ -16,10 +16,9 @@ ogdpc:
     - reference: 32621500010 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/66953
 documents:
-contrat-formation-dpc.pdf: contrat de formation DPC
-contrat-formation-hors-dpc.pdf: contrat de formation hors DPC
-convention-formation-salarie.pdf: convention de formation salarié
-reglement-interieur-formation-apropos.pdf: réglement intérieur formation "a propos"
+    contrat-formation-dpc.pdf: contrat de formation DPC
+    contrat-formation-hors-dpc.pdf: contrat de formation hors DPC
+    convention-formation-salarie.pdf: convention de formation salarié
 ---
 <!-- Animé par Kristell Bourdin et Natacha Roginski, orthophonistes-
 A St Leu, 19 et 20 octobre 2015

@@ -18,7 +18,6 @@ documents:
     contrat-formation-dpc.pdf: contrat de formation DPC
     contrat-formation-fif-pl.pdf: contrat de formation FIF-PL
     convention-formation-salarie.pdf: convention de formation salarié
-    reglement-interieur-formation-apropos.pdf: réglement intérieur formation "a propos"
 ---
 <!--A Plougonvelin (près de Brest), 5 et 6 mars 2015-->
 <!--Formation accessible DPC et FIF-PL-->

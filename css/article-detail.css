@@ -20,29 +20,14 @@
     margin-left: 10px;
 }
 
-.prevention a,
-.prevention h1,
-.prevention h2,
-.prevention h3,
-.prevention h4,
-.prevention h5 {
+.prevention a {
     color: hsl(201, 40%, 56%);
 }
 
-.recherche a,
-.recherche h1,
-.recherche h2,
-.recherche h3,
-.recherche h4,
-.recherche h5 {
+.recherche a {
     color: hsl(260, 31%, 62%);
 }
 
-.formation a,
-.formation h1,
-.formation h2,
-.formation h3,
-.formation h4,
-.formation h5 {
+.formation a {
     color: hsl(335, 78%, 58%);
 }

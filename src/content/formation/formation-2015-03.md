@@ -16,8 +16,7 @@ financement:
 ogdpc:
     - reference: 32621500008 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/64210
-documents:
-    reglement-interieur-formation-apropos.pdf: réglement intérieur formation "a propos"
+documents:    
 --- 
 <!-- Animé par Kristell Bourdin et Natacha Roginski, orthophonistes -->
 <!-- A St Malo, 27 et 28 février 2015 -->
