@@ -5,7 +5,6 @@ var metalsmith = require('metalsmith'),
     templates = require('metalsmith-in-place'),
     collections = require('metalsmith-collections'),
     permalinks = require('metalsmith-permalinks'),
-    filenames = require('metalsmith-filenames'),
     excerpts = require('metalsmith-excerpts'),
     myPlugin = require('metalsmith-my-plugin'),
     Handlebars = require('handlebars'),
@@ -63,7 +62,6 @@ metalsmith(__dirname)
             reverse: true
         }
     }))
-    .use(filenames())
     .use(myPlugin())
     .use(markdown())
     .use(excerpts())
