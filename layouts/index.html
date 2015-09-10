@@ -3,12 +3,10 @@
 {{> axe}}
 <!--<h2>{{titre}}</h2>-->
 <div id="js-accueil">
-    <ul class="grid">
+    <div class="grid-2">
         {{#each collections.posts}}
-            <li class="col-1-2">
-                {{> articleResume}}
-            </li>
+            {{> articleResume}}
         {{/each}}
-    </ul>
+    </div>
 </div>
 {{> footer}}

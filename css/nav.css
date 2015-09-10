@@ -23,7 +23,10 @@
 
 .nav-prevention {
 	padding-bottom: 5px;
+	border-bottom: 3px solid white;
+	transition: color 300ms ease-in-out 0s, border-bottom-color 300ms ease-in-out 0s;
 	/*font-variant: small-caps;*/
+	
 }
 
 .nav-prevention:hover,
@@ -34,6 +37,8 @@
 
 .nav-recherche {
 	padding-bottom: 5px;
+	border-bottom: 3px solid white;
+	transition: color 300ms ease-in-out 0s, border-bottom-color 300ms ease-in-out 0s;
 	/*font-variant: small-caps;*/
 }
 
@@ -45,6 +50,8 @@
 
 .nav-formation {
 	padding-bottom: 5px;
+	border-bottom: 3px solid white;
+	transition: color 300ms ease-in-out 0s, border-bottom-color 300ms ease-in-out 0s;
 	/*font-variant: small-caps;*/
 }
 

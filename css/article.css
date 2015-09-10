@@ -15,6 +15,14 @@
 /*    cursor: pointer;*/
 }
 
+html {
+    background-color: hsla(0,0%,0%, 0.1);
+}
+
+[class*='grid-'] .articleResume {
+    border: solid 1px hsla(0,0%,0%, 0.3);
+}
+
 .article-titre,
 .membreBureau-fonction{
     font-size: 21px;    
