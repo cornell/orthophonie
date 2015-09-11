@@ -3,10 +3,10 @@
 {{> axe}}
 <!--<h2>{{titre}}</h2>-->
 <div id="js-accueil">
-    <div class="grid-2">
-        {{#each collections.posts}}
-            {{> articleResume}}
-        {{/each}}
+    <div class="grid-2 grid-article">
+    {{#each collections.posts}}
+        {{> articleResume}}
+    {{/each}}
     </div>
 </div>
 {{> footer}}

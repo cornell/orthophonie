@@ -2,13 +2,9 @@
 {{> nav}}
 <div id="js-prevention" class="prevention">
     {{> axePrevention}}
-    <ul>
+    <div class="grid-2 grid-article">
     {{#each collections.prevention}}        
-        {{#isAxePrevention}}
-        <li>
-            {{> articleResume}}
-        </li>
-        {{/isAxePrevention}}
+        {{#isAxePrevention}}{{> articleResume}}{{/isAxePrevention}}
     {{/each}}
     </ul>
 </div>

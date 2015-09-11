@@ -3,12 +3,14 @@
 	background-color: white;
 	border-bottom: solid 3px hsl(0, 0%, 70%);
 	line-height: 3.5rem;
-	color: hsl(0, 0%, 70%)
+	color: hsl(0, 0%, 70%);
+	display: flex;
+	flex-direction: row;
 }
 
-.nav>li {
-	display: inline-block;
-	width: 24%;
+.nav-item {
+	flex: 0 0 auto;
+	width: 25%; 
 }
 
 .nav-accueil {

@@ -1,10 +1,8 @@
-<div class="articleResume mod">
+<div class="articleResume {{#isAxePrevention}}articleResume-prevention{{/isAxePrevention}}{{#isAxeFormation}}articleResume-formation{{/isAxeFormation}}{{#isAxeRecherche}}articleResume-recherche{{/isAxeRecherche}}">
     {{> articleInfo}}
-    <div>
-        <div class="article-contenu">
-            <p>{{&excerpt}}<span> ...</span></p>
-            <a class="readMore" href="/{{path}}">Lire la suite</a>
-        </div>
+    <div class="articleResume-contenu">
+        <p>{{&excerpt}}<span> ...</span></p>
+        <a class="readMore" href="/{{path}}">Lire la suite</a>
     </div>
     <div class="clear"></div>
 </div>

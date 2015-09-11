@@ -19,10 +19,6 @@ html {
     background-color: hsla(0,0%,0%, 0.1);
 }
 
-[class*='grid-'] .articleResume {
-    border: solid 1px hsla(0,0%,0%, 0.3);
-}
-
 .article-titre,
 .membreBureau-fonction{
     font-size: 21px;    
@@ -41,9 +37,21 @@ html {
     color: hsl(0, 0%, 55%);
 }
 */
-.article-contenu {
+.articleResume-contenu {
     margin-top: 10px;
     position: relative;
+}
+
+.articleResume-prevention {
+    border-left: solid 5px hsl(201, 40%, 56%) !important;
+}
+
+.articleResume-recherche {
+    border-left: solid 5px hsl(260, 31%, 62%) !important;
+}
+
+.articleResume-formation {
+    border-left: solid 5px hsl(335, 78%, 58%) !important;
 }
 
 .article-date {

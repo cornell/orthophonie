@@ -26,31 +26,3 @@
 .col-1-2 {
   width: 50%;
 }*/
-.grid-2 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-left: -20px;
-	
-	/* Inline-block fallback */
-  letter-spacing: -0.31em;
-  text-rendering: optimizespeed;
-	padding: 20px;
-}
-.grid-2 > * {
-	flex: 0 0 auto;
-	width: calc(50% - 20px); 
-	margin-left: 20px;
-	display: block;  /* IE fix */
-	
-	/* Inline-block fallback */
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-	text-rendering: auto;
-}
-
-[class*="grid-"] > div {  
-  margin-bottom: 20px; 
-	padding: 1em;
-}

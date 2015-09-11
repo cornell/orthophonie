@@ -1,90 +1,44 @@
-@media screen and (min-width: 480px) and (max-width: 599px) {
-	.axePrevention,
-	.axeRecherche,
-	.axeFormation{
-	    display: inline-block;
-	    width: 33.333%;
-	    height: 460px;
-	}
-	
-	.prevention .axePrevention,
-	.recherche .axeRecherche,
-	.formation .axeFormation{
-	    display: block;
-	    width: 100%;
-	    height: inherit;
-	}
-}
-
-@media screen and (min-width: 600px) and (max-width: 659px) {
-	.axePrevention,
-	.axeRecherche,
-	.axeFormation {
-	    display: inline-block;
-	    width: 33.333%;
-		height: 410px;
-	}
-	
-	.prevention .axePrevention,
-	.recherche .axeRecherche,
-	.formation .axeFormation{
-	    display: block;
-	    width: 100%;
-	    height: inherit;
-	}	
-}
-
-@media screen and (min-width: 660px) and (max-width: 699px) {
-	.axePrevention,
-	.axeRecherche,
-	.axeFormation {
-	    display: inline-block;
-	    width: 33.333%;
-		height: 365px;
-	}
-	
-	.prevention .axePrevention,
-	.recherche .axeRecherche,
-	.formation .axeFormation{
-	    display: block;
-	    width: 100%;
-	    height: inherit;
-	}	
-}
-
-@media screen and (min-width: 700px) and (max-width: 939px) {
-	.axePrevention,
-	.axeRecherche,
-	.axeFormation {
-	    display: inline-block;
-	    width: 33.333%;
-	    height: 290px;
-	}
-	
-	.prevention .axePrevention,
-	.recherche .axeRecherche,
-	.formation .axeFormation{
-	    display: block;
-	    width: 100%;
-	    height: inherit;
-	}	
-}
-
 @media screen and (min-width: 800px) {
-	
-	ul > li {
-		/*display: inline-block;*/
-	}	
-}
-
-@media screen and (min-width: 940px) {
-	.axePrevention,
-	.axeRecherche,
-	.axeFormation {
-	    display: inline-block;
-	    width: 33.333%;
-	    height: 270px;
+		
+	.grid-2 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: -20px;
 	}
+	.grid-2 > div {
+		flex: 0 0 auto;
+		width: calc(50% - 20px); 
+		margin-left: 20px;
+	}
+	
+	.grid-2 > div:first-child {
+	width: calc(100% - 20px); 
+	}	
+	
+	.grid-axe {
+	display: flex;
+		flex-direction: row; 
+	}
+	
+	.grid-axe > div {
+		flex: 0 0 auto;
+		width: 33.333%; 
+	}
+
+	.articleResume {
+		border-top: 1px solid hsla(0, 0%, 0%, 0.3);
+		border-left: 1px solid hsla(0, 0%, 0%, 0.3);
+		border-right: 1px solid hsla(0, 0%, 0%, 0.3);
+		margin-bottom: 20px;
+	}	
+	
+	.grid-article {
+		padding: 20px;
+	}
+}
+/*
+@media screen and (min-width: 940px) {
 	
 	.prevention .axePrevention,
 	.recherche .axeRecherche,
@@ -98,5 +52,6 @@
 	.axeRecherche-image,
 	.axeFormation-image {
 	    height: 100px !important;
-	}	
+	}		
 }
+*/

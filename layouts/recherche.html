@@ -2,13 +2,9 @@
 {{> nav}}
 <div id="js-recherche" class="recherche">
     {{> axeRecherche}}
-    <ul>
-    {{#each collections.recherche}}
-        {{#isAxeRecherche}}
-        <li>
-            {{> articleResume}}
-        </li>
-        {{/isAxeRecherche}}
+    <div class="grid-2 grid-article">
+    {{#each collections.recherche}}        
+        {{#isAxeRecherche}}{{> articleResume}}{{/isAxeRecherche}}
     {{/each}}
     </ul>
 </div>

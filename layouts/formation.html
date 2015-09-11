@@ -2,13 +2,9 @@
 {{> nav}}
 <div id="js-formation" class="formation">
     {{> axeFormation}}
-    <ul>
-    {{#each collections.formation}}
-        {{#isAxeFormation}}
-        <li>
-            {{> articleResume}}
-        </li>
-        {{/isAxeFormation}}
+    <div class="grid-2 grid-article">
+    {{#each collections.formation}}        
+        {{#isAxeFormation}}{{> articleResume}}{{/isAxeFormation}}
     {{/each}}
     </ul>
 </div>
