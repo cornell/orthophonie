@@ -4,20 +4,24 @@ axe{
 
 .axePrevention {
     background-color: hsl(201, 40%, 66%);
+    border-bottom: solid 1px hsl(201, 40%, 56%);    
 }
 
 .axeRecherche {
     background-color: hsl(260, 31%, 72%);
+    border-bottom: solid 1px hsl(260, 31%, 62%);
 }
 
 .axeFormation {
     background-color: hsl(335, 78%, 68%);
+    border-bottom: solid 1px hsl(335, 78%, 58%);
 }
 
 .prevention .axePrevention,
 .recherche .axeRecherche,
 .formation .axeFormation {
     text-align: center;
+    /*margin: 20px 20px 0;*/
 }
 
 .axePrevention,

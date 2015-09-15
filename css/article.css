@@ -42,15 +42,15 @@ html {
     position: relative;
 }
 
-.articleResume-prevention {
+.accueil .articleResume-prevention {
     border-left: solid 5px hsl(201, 40%, 56%) !important;
 }
 
-.articleResume-recherche {
+.accueil .articleResume-recherche {
     border-left: solid 5px hsl(260, 31%, 62%) !important;
 }
 
-.articleResume-formation {
+.accueil .articleResume-formation {
     border-left: solid 5px hsl(335, 78%, 58%) !important;
 }
 
@@ -123,4 +123,16 @@ html {
     margin-left: 24px;
     margin-top: -5px;
     color: hsla(0, 0%, 0%, 0.55);
+}
+
+.articleResume-prevention a {
+    color: hsl(201, 40%, 56%);
+}
+
+.articleResume-recherche a {
+    color: hsl(260, 31%, 62%);
+}
+
+.articleResume-formation a {
+    color: hsl(335, 78%, 58%);
 }

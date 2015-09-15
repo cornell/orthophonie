@@ -20,6 +20,7 @@ documents:
     contrat-formation-hors-pl.pdf: contrat de formation hors DPC
     convention-formation-salarie.pdf: convention de formation salarié
 ---
+
 ## Objectifs pédagogiques
 
 - connaître les fentes et l'incompétence vélo-pharyngée

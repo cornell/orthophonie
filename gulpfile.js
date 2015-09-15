@@ -8,6 +8,7 @@ var revReplace = require('gulp-rev-replace');
 var gulpif = require('gulp-if');
 var useref = require('gulp-useref');
 var minifyCss = require('gulp-minify-css');
+var less = require('gulp-less');
     // uglify = require('gulp-uglify'),
 
 
@@ -18,6 +19,7 @@ gulp.task('default', function(){
 	return gulp.src('layouts/partials/header.html')	
 		.pipe(assets) // intègre les fichiers définis dans les blocs html dans le pipe
 		//.pipe(gulpif('*.css', minifyCss()))
+		//.pipe(less())
 		.pipe(rev())                // Rename the concatenated files
 		.pipe(assets.restore())	
 		.pipe(useref())
