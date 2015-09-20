@@ -1,9 +1,9 @@
 .nav {
 	text-align: center;
 	background-color: white;
-	border-bottom: solid 1px hsl(0, 0%, 70%);
+	border-bottom: solid 1px @color-article-border;
 	line-height: 3.5rem;
-	color: hsl(0, 0%, 70%);
+	color: @color-article-border;
 	display: flex;
 	flex-direction: row;
 }
@@ -19,8 +19,8 @@
 
 .nav-accueil:hover,
 .nav-accueil--active {
-	border-bottom: solid 3px hsl(0, 0%, 20%);
-	color: hsl(0, 0%, 20%);	
+	border-bottom: solid 3px @color-font-primary;
+	color: @color-font-primary;	
 }
 
 .nav-prevention {
@@ -33,8 +33,8 @@
 
 .nav-prevention:hover,
 .nav-prevention--active {
-	border-bottom: solid 3px #85B2CA;
-	color: hsl(0, 0%, 20%);	
+	border-bottom: solid 3px @color-prevention;
+	color: @color-font-primary;	
 }
 
 .nav-recherche {
@@ -46,8 +46,8 @@
 
 .nav-recherche:hover,
 .nav-recherche--active {
-	border-bottom: solid 3px #B0A1CD;
-	color: hsl(0, 0%, 20%);	
+	border-bottom: solid 3px @color-recherche;
+	color: @color-font-primary;	
 }
 
 .nav-formation {
@@ -59,6 +59,6 @@
 
 .nav-formation:hover,
 .nav-formation--active {
-	border-bottom: solid 3px #ED6DA2;
-	color: hsla(0, 0%, 0%, .7);	
+	border-bottom: solid 3px @color-formation;
+	color: @color-font-primary;	
 }

@@ -1,11 +1,10 @@
+<body id="js-formation" class="formation">
 {{> header}}
 {{> nav}}
-<div id="js-formation" class="formation">
-    {{> axeFormation}}
-    <div class="grid-2 grid-article">
-    {{#each collections.formation}}        
-        {{#isAxeFormation}}{{> articleResume}}{{/isAxeFormation}}
-    {{/each}}
-    </ul>
+{{> axeFormation}}
+<div class="grid-2 grid-article">
+{{#each collections.formation}}        
+    {{#isAxeFormation}}{{> articleResume}}{{/isAxeFormation}}
+{{/each}}
 </div>
 {{> footer}}

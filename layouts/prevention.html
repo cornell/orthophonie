@@ -1,11 +1,10 @@
+<body id="js-prevention" class="prevention">
 {{> header}}
 {{> nav}}
-<div id="js-prevention" class="prevention">
-    {{> axePrevention}}
-    <div class="grid-2 grid-article">
-    {{#each collections.prevention}}        
-        {{#isAxePrevention}}{{> articleResume}}{{/isAxePrevention}}
-    {{/each}}
-    </ul>
+{{> axePrevention}}
+<div class="grid-2 grid-article">
+{{#each collections.prevention}}        
+    {{#isAxePrevention}}{{> articleResume}}{{/isAxePrevention}}
+{{/each}}
 </div>
 {{> footer}}

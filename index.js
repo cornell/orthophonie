@@ -11,11 +11,7 @@ var metalsmith = require('metalsmith'),
     fs = require('fs');
 
 
-// Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/layouts/partials/header.tmpl.html').toString());
-// Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.tmpl.html').toString());
 Handlebars.registerHelper('isAxePrevention', function(options){
-    //  console.log(this.titre);
-    //  console.log(this.axe);
     if(this.axe === 'prevention')
         return options.fn(this);
     else
@@ -23,8 +19,6 @@ Handlebars.registerHelper('isAxePrevention', function(options){
 });
 
 Handlebars.registerHelper('isAxeRecherche', function(options){
-    //  console.log(this.titre);
-    //  console.log(this.axe);
     if(this.axe === 'recherche')
         return options.fn(this);
     else
@@ -32,8 +26,6 @@ Handlebars.registerHelper('isAxeRecherche', function(options){
 });
 
 Handlebars.registerHelper('isAxeFormation', function(options){
-    //  console.log(this.titre);
-    //  console.log(this.axe);
     if(this.axe === 'formation')
         return options.fn(this);
     else

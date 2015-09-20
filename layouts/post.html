@@ -1,26 +1,25 @@
+<body id="js-{{axe}}" class="{{axe}} post" style="background-color:white">
 {{>header}}
 {{> nav}}
-<div id="js-{{axe}}" class="{{axe}}">
-    {{#isAxePrevention}}{{> axePrevention}}{{/isAxePrevention}}
-    {{#isAxeRecherche}}{{> axeRecherche}}{{/isAxeRecherche}}
-    {{#isAxeFormation}}{{> axeFormation}}{{/isAxeFormation}}
-    <article class="articleDetail">
-        {{> articleInfo}}
-        {{&contents}}
-        <ul>            
-        {{#each documents}}
-        <li class="pdf-bloc">
-            <a href="../../assets/{{../pdfRelativeDir}}/{{@key}}"><span class="icon-pdf"></span><span class="pdf-descriptionFichier">{{this}}</span></a>
-            <div class="pdf-nomFichier">{{@key}}</div>
-        </li>
-        {{/each}}
-        {{#isAxeFormation}}
-        <li class="pdf-bloc">
-            <a href="../../assets/pdf/reglement-interieur-formation-apropos.pdf"><span class="icon-pdf"></span><span class="pdf-descriptionFichier">réglement intérieur formation "a propos"</span></a>
-            <div class="pdf-nomFichier">reglement-interieur-formation-apropos.pdf</div>
-        </li>
-        {{/isAxeFormation}}      
-        </ul>
+{{#isAxePrevention}}{{> axePrevention}}{{/isAxePrevention}}
+{{#isAxeRecherche}}{{> axeRecherche}}{{/isAxeRecherche}}
+{{#isAxeFormation}}{{> axeFormation}}{{/isAxeFormation}}
+<article class="article-{{axe}} articleDetail">
+    {{> articleInfo}}
+    {{&contents}}
+    <ul> 
+    {{#each documents}}
+    <li class="pdf-bloc">
+        <a href="../../assets/{{../pdfRelativeDir}}/{{@key}}"><span class="icon-pdf"></span><span class="pdf-descriptionFichier">{{this}}</span></a>
+        <div class="pdf-nomFichier">{{@key}}</div>
+    </li>
+    {{/each}}
+    {{#isAxeFormation}}
+    <li class="pdf-bloc">
+        <a href="../../assets/pdf/reglement-interieur-formation-apropos.pdf"><span class="icon-pdf"></span><span class="pdf-descriptionFichier">réglement intérieur formation "a propos"</span></a>
+        <div class="pdf-nomFichier">reglement-interieur-formation-apropos.pdf</div>
+    </li>
+    {{/isAxeFormation}}      
+    </ul>
     </article>
-</div>
 {{>footer}}

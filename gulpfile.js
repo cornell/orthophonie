@@ -18,8 +18,10 @@ gulp.task('default', function(){
 	
 	return gulp.src('layouts/partials/header.html')	
 		.pipe(assets) // intègre les fichiers définis dans les blocs html dans le pipe
+		.pipe(less({
+             strictMath: true
+        }))
 		//.pipe(gulpif('*.css', minifyCss()))
-		//.pipe(less())
 		.pipe(rev())                // Rename the concatenated files
 		.pipe(assets.restore())	
 		.pipe(useref())

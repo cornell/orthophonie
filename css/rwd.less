@@ -8,7 +8,7 @@
 	}
 	.grid-2 > div {
 		flex: 0 0 auto;
-		width: calc(33.333% - 20px); 
+		width: calc(50% - 20px); 
 		margin-left: 20px;
 	}
 	
@@ -30,32 +30,32 @@
 	}
 
 	.articleResume {
-		border-top: 1px solid hsla(0, 0%, 0%, 0.3);
-		border-left: 1px solid hsla(0, 0%, 0%, 0.3);
-		border-right: 1px solid hsla(0, 0%, 0%, 0.3);
+		border-top: 1px solid @color-article-border;
+		border-left: 1px solid @color-article-border;
+		border-right: 1px solid @color-article-border;
 		margin-bottom: 20px;
-	}	
+	}
+    
+    .prevention .axePrevention,
+    .recherche .axeRecherche,
+    .formation .axeFormation {
+        text-align: center;
+        margin: 20px 20px 0;    
+    }    	
 	
 	.grid-article {
 		padding: 20px;
 	}
 	
-	.prevention .axePrevention,
-	.recherche .axeRecherche,
-	.formation .axeFormation {
-		text-align: center;
-		margin: 20px 20px 0;
-	}
-	
 	.axePrevention {
-		border: solid 1px hsl(201, 40%, 56%);
+		border: solid 1px @color-prevention-dark;
 	}
 	
 	.axeRecherche {
-		border: solid 1px hsl(260, 31%, 62%);
+		border: solid 1px @color-recherche-dark;
 	}
 	
 	.axeFormation {
-		border: solid 1px hsl(335, 78%, 58%);
-	}	
+		border: solid 1px @color-formation-dark;
+	}        	
 }

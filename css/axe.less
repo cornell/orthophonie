@@ -3,26 +3,26 @@ axe{
 }
 
 .axePrevention {
-    background-color: hsl(201, 40%, 66%);
-    border-bottom: solid 1px hsl(201, 40%, 56%);    
+    background-color: @color-prevention;
+    border-bottom: solid 1px @color-prevention-dark;    
 }
 
 .axeRecherche {
-    background-color: hsl(260, 31%, 72%);
-    border-bottom: solid 1px hsl(260, 31%, 62%);
+    background-color: @color-recherche;
+    border-bottom: solid 1px @color-recherche-dark;
 }
 
 .axeFormation {
-    background-color: hsl(335, 78%, 68%);
-    border-bottom: solid 1px hsl(335, 78%, 58%);
+    background-color: @color-formation;
+    border-bottom: solid 1px @color-formation-dark;
 }
 
-.prevention .axePrevention,
-.recherche .axeRecherche,
-.formation .axeFormation {
-    text-align: center;
-    /*margin: 20px 20px 0;*/
+.prevention.post .axePrevention,
+.recherche.post .axeRecherche,
+.formation.post .axeFormation {
+    margin: 0;    
 }
+
 
 .axePrevention,
 .axeRecherche,
@@ -41,15 +41,15 @@ axe{
 }
 
 .axePrevention-detail {
-    text-shadow: 1px 1px 1px hsl(201, 40%, 60%);
+    text-shadow: 1px 1px 1px @color-prevention-text-shadow;
 }
 
 .axeRecherche-detail {
-    text-shadow: 1px 1px 1px hsl(260, 31%, 68%);
+    text-shadow: 1px 1px 1px @color-recherche-text-shadow;
 }
 
 .axeFormation-detail {
-    text-shadow: 1px 1px 1px hsl(335, 78%, 64%);
+    text-shadow: 1px 1px 1px @color-formation-text-shadow;
 }
 
 .prevention .axePrevention-detail,
@@ -60,16 +60,16 @@ axe{
 } 
 
 .axePrevention-image {
-    fill: hsl(201, 40%, 56%);    
+    fill: @color-prevention-dark;    
 }
 
 
 .axeRecherche-image {
-    fill: hsl(260, 31%, 62%);
+    fill: @color-recherche-dark;
 }
 
 .axeFormation-image {
-    fill: hsl(335, 78%, 58%);
+    fill: @color-formation-dark;
 }
 
 .axePrevention-image,
@@ -86,6 +86,12 @@ axe{
 .axePrevention-titre,
 .axeRecherche-titre,
 .axeFormation-titre{
+    display: none;
+}
+
+.accueil .axePrevention-titre,
+.accueil .axeRecherche-titre,
+.accueil .axeFormation-titre{
     font-size: 30px;
     font-variant: small-caps;
     display: inline-block;

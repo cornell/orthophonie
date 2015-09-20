@@ -1,12 +1,10 @@
+<body id="js-accueil" class="accueil">
 {{> header}}
 {{> nav}}
 {{> axe}}
-<!--<h2>{{titre}}</h2>-->
-<div id="js-accueil" class="accueil">
-    <div class="grid-2 grid-article">
-    {{#each collections.posts}}
-        {{> articleResume}}
-    {{/each}}
-    </div>
+<div class="grid-2 grid-article">
+{{#each collections.posts}}
+    {{> articleResume}}
+{{/each}}
 </div>
 {{> footer}}
