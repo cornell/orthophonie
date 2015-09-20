@@ -1,0 +1,10 @@
+    - Hélène Le Roux
+        - adresse
+            - 3 allée du stade
+            - 22680 Etables-sur-Mer
+    - Kristell Bourdin
+        - adresse 8 rue Lamennais
+        - 22100 Dinan
+    - Muriel Rio-Fiorina
+        - adresse 8 rue Lamennais
+            - 22100 Dinan
