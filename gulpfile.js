@@ -42,7 +42,9 @@ gulp.task('mv', function(){
 	gulp.src(['dist/pages/formation/index.html'])
 		.pipe(gulp.dest('dist/formation'));		
 	gulp.src(['dist/pages/a-propos/index.html'])
-		.pipe(gulp.dest('dist/a-propos'));		
+		.pipe(gulp.dest('dist/a-propos'));
+	gulp.src(['dist/pages/contact/index.html'])
+		.pipe(gulp.dest('dist/contact'));						
 });
 
 gulp.task('mv-clean', ['mv'], function(){
@@ -104,4 +106,10 @@ gulp.task('replace', function(){
 		.pipe(replace('href="/pages/index', 'href="../index.html'))
 		.pipe(replace('href="/pages/', 'href="../'))
 		.pipe(gulp.dest('dist/a-propos'));
+		
+	gulp.src(['dist/contact/index.html'])
+		.pipe(replace('href="../../src/css/combined', 'href="../css/combined'))
+		.pipe(replace('href="/pages/index', 'href="../index.html'))
+		.pipe(replace('href="/pages/', 'href="../'))
+		.pipe(gulp.dest('dist/contact'));		
 });
