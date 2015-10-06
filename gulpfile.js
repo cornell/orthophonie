@@ -45,6 +45,8 @@ gulp.task('mv', function(){
 		.pipe(gulp.dest('dist/a-propos'));
 	gulp.src(['dist/pages/contact/index.html'])
 		.pipe(gulp.dest('dist/contact'));						
+	gulp.src(['dist/pages/qui-sommes-nous/index.html'])
+		.pipe(gulp.dest('dist/qui-sommes-nous'));				
 });
 
 gulp.task('mv-clean', ['mv'], function(){
@@ -111,5 +113,11 @@ gulp.task('replace', function(){
 		.pipe(replace('href="../../src/css/combined', 'href="../css/combined'))
 		.pipe(replace('href="/pages/index', 'href="../index.html'))
 		.pipe(replace('href="/pages/', 'href="../'))
-		.pipe(gulp.dest('dist/contact'));		
+		.pipe(gulp.dest('dist/contact'));
+
+	gulp.src(['dist/qui-sommes-nous/index.html'])
+		.pipe(replace('href="../../src/css/combined', 'href="../css/combined'))
+		.pipe(replace('href="/pages/index', 'href="../index.html'))
+		.pipe(replace('href="/pages/', 'href="../'))
+		.pipe(gulp.dest('dist/qui-sommes-nous'));						
 });
