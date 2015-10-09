@@ -1,11 +1,38 @@
 {{> header}}
-<body id="js-qui-sommes-nous" class="qui-sommes-nous">
+<body id="js-qui-sommes-nous" class="quiSommesNous">
 {{> nav}}
-<div class="membreAssociation-container">
-	<div class="membreAssociation"><span class="membreAssociation-titre">Présidente</span><span class="membreAssociation-personne">{{presidente}}</span></div>
-    <div class="membreAssociation"><span class="membreAssociation-titre">Secrétaire</span><span class="membreAssociation-personne">{{secretaire}}</span></div>
-    <div class="membreAssociation"><span class="membreAssociation-titre">Secrétaire adjointe</span><span class="membreAssociation-personne">{{secretaire-adjointe}}</span></div>
-	<div class="membreAssociation"><span class="membreAssociation-titre">Trésorière</span><span class="membreAssociation-personne">{{tresoriere}}</span></div>
-    <div class="membreAssociation"><span class="membreAssociation-titre">Membres du conseil d'administration</span><span class="membreAssociation-personne">{{membre-conseil-administration}}</span></div>
+<div class="quiSommesNous-container1">
+    <div class="quiSommesNous-container2">
+        <div class="quiSommesNous-header">
+            <div class="u-strong u-uppercase">A PROPOS</div>
+            <div><span class="u-strong u-uppercase">a</span>ssociation de <span class="u-strong u-uppercase">p</span>révention et de <span  class="u-strong u-uppercase">R</span>echerche en <span  class="u-strong u-uppercase">O</span>rthophonie ...</div>
+            <div><span class="u-strong u-uppercase">p</span>rogrammes <span class="u-strong u-uppercase">o</span>rthophoniques d'éducation à la <span  class="u-strong u-uppercase">s</span>anté</div>    
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="quiSommesNous-body">
+    <p class="quiSommesNous-presentation">
+    L'association a vu le jour en juin 2011 à l’initiative de 5 orthophonistes bretons, désireux de promouvoir la prévention, partie intégrante du champ d’intervention des orthophonistes depuis son inscription officielle en 1992 dans notre décret de compétence.
+    </p>
+    <p>Nombre d’entre nous sont ou seront sollicités pour réaliser des actions, des missions de prévention sur le terrain.</p>
+    <p>A Propos, <span class="u-strong">ouvert à tous les orthophonistes</span>, constitue un point d’appui institutionnel et logistique pour mener à bien ces actions.</p>
+    <p>Les objectifs d'A PROPOS couvrent les 3 axes suivants: <a class="readMore" href="/prevention">Prévention</a>, <a class="readMore" href="Recherche">Recherche</a>, <a class="readMore" href="Formation">Formation</a></p>
+    <button class="btn-adhesion">Adhérer à l'association</button>
+    <a class="readMore" href="/contact">Nous contacter</a>
+    
+    <div class="membreAssociation-list">
+        <p class="membreAssociationList-titre">Les membres de l'association</p>
+        <div class="membreAssociation">
+            <div class="membreAssociation-avatar"></div>
+            <div class="membreAssociation-titre">Présidente</div>
+            <div class="membreAssociation-personne">{{presidente}}</div>
+        </div>
+    </div>
+        <div class="membreAssociation"><span class="membreAssociation-titre">Secrétaire</span><span class="membreAssociation-personne">{{secretaire}}</span></div>
+        <div class="membreAssociation"><span class="membreAssociation-titre">Secrétaire adjointe</span><span class="membreAssociation-personne">{{secretaire-adjointe}}</span></div>
+        <div class="membreAssociation"><span class="membreAssociation-titre">Trésorière</span><span class="membreAssociation-personne">{{tresoriere}}</span></div>
+        <div class="membreAssociation"><span class="membreAssociation-titre">Membres du conseil d'administration</span><span class="membreAssociation-personne">{{membre-conseil-administration}}</span></div>
+    </div>
 </div>
 {{> footer}}
