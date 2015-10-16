@@ -1,5 +1,6 @@
 html, body {
-    height: 100%;
+  box-sizing: border-box;
+  // height: 100%;
 }
 
 html {
@@ -10,6 +11,11 @@ html {
 
 body {
     background-color: @color-bg-body;        
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 h1, 

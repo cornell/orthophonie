@@ -1,39 +1,41 @@
 .nav {
-	text-align: center;
 	background-color: white;
 	border-bottom: solid 1px @color-article-border;
-	line-height: 3.5rem;
+	line-height: 2.5rem;
 	color: @color-article-border;
-	display: flex;
-	flex-direction: row;
 }
 
-.nav-item {
-	flex: 0 0 auto;
-	width: 20%; 
+.nav--block {
+	position: relative;
+	top: 0;
+	transition: top 500ms ease-in-out 0s	
 }
+
+.nav--hidden {
+	position: absolute;
+	width: 100%;	
+	top: -300px;
+}
+
 
 .nav-accueil,
-.nav-contact,
-.nav-prevention,
-.nav-recherche,
-.nav-formation,
-.nav-qui-sommes-nous {
-	padding-bottom: 15px;
+.nav-quiSommesNous {
+	border-bottom: 3px solid white;
+	transition: color 300ms ease-in-out 0s;/*, border-bottom-color 300ms ease-in-out 0s;*/
 }
 
 .nav-accueil:hover,
 .nav-accueil--active,
 .nav-contact:hover,
 .nav-contact--active,
-.nav-qui-sommes-nous:hover,
-.nav-qui-sommes-nous--active {
+.nav-quiSommesNous:hover,
+.nav-quiSommesNous--active {
 	border-bottom: solid 3px @color-font-primary;
 	color: @color-font-primary;	
 }
 
 .nav-prevention {
-	border-bottom: 1px solid white;
+	border-bottom: 3px solid white;
 	transition: color 300ms ease-in-out 0s;/*, border-bottom-color 300ms ease-in-out 0s;*/
 	/*font-variant: small-caps;*/
 	
@@ -46,7 +48,7 @@
 }
 
 .nav-recherche {
-	border-bottom: 1px solid white;
+	border-bottom: 3px solid white;
 	transition: color 300ms ease-in-out 0s;/*, border-bottom-color 300ms ease-in-out 0s;*/
 	/*font-variant: small-caps;*/
 }
@@ -58,7 +60,7 @@
 }
 
 .nav-formation {
-	border-bottom: 1px solid white;
+	border-bottom: 3px solid white;
 	transition: color 300ms ease-in-out 0s;/*, border-bottom-color 300ms ease-in-out 0s;*/
 	/*font-variant: small-caps;*/
 }
