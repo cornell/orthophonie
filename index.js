@@ -32,6 +32,28 @@ Handlebars.registerHelper('isAxeFormation', function(options){
         return options.inverse(this);
 });
 
+Handlebars.registerHelper('isDPC', function(options){
+    if(this.financement && this.financement.indexOf('dpc') > -1)
+        return options.fn(this);
+    else
+        return options.inverse(this);
+});
+
+Handlebars.registerHelper('isHorsDPC', function(options){
+    if(this.financement && this.financement.indexOf('hors-dpc') > -1)
+        return options.fn(this);
+    else
+        return options.inverse(this);
+});
+
+Handlebars.registerHelper('isSalarie', function(options){
+    if(this.financement && this.financement.indexOf('salarie') > -1)
+        return options.fn(this);
+    else
+        return options.inverse(this);
+});
+
+
 metalsmith(__dirname)    
     .use(collections({
         pages: {
@@ -72,7 +94,8 @@ metalsmith(__dirname)
              axeRecherche: 'partials/axe-recherche',
              axeFormation: 'partials/axe-formation',
              articleResume: 'partials/article-resume',
-             articleInfo: 'partials/article-info'
+             articleInfo: 'partials/article-info',
+             inscriptionTarif: 'partials/inscription-tarif'
        }
     }))
     .destination('./dist')

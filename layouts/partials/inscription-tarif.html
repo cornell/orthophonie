@@ -1,23 +1,51 @@
-## Inscription et tarifs
-
-DPC: 
-    - la formation est gratuite et indemnisée 
-    - Inscription sur le site [ogdpc](http://www.ogdpc.fr/)
-    - N° de référence du programme : {{reference}}       
-    - contrat de formation DPC (pdf)
-    - contrat de formation DPC à retourner signé à l'adresse 
-    - {{organisateur}}
+<div class="inscriptionTarif">
+    <h2>Inscription et tarifs</h2>
+    {{#isDPC}}
+    <h3>DPC</h3>
+    <ul> 
+        <li>la formation est gratuite et indemnisée</li>
+        <li>Inscription sur le site d'<a href="http://www.ogdpc.fr/">ogdpc</a></li>
+        <li>N° de référence du programme : {{ogdpc-reference}}</li>
+        <li class="pdf-bloc">
+            <a href="../../assets/{{../pdfRelativeDir}}/{{contrat-formation-dpc.pdf}}"><span class="icon-pdf"></span><span class="pdf-descriptionFichier">contrat de formation DPC</span></a>
+            <div class="pdf-nomFichier">contrat-formation-dpc.pdf</div>
+        </li>
+        <li>contrat de formation DPC à retourner signé à l'adresse</li>
+        <li>{{organisateur}}</li>
+    </ul>
+    {{/isDPC}}
+    {{#isHorsDPC}}
+    <h3>Hors DPC</h3>
+        <ul>
+            <li>Tarif adhérents "A Propos": {{tarif-hors-dpc-adherent}}</li> 
+            <li>Tarif non adhérents: {{tarif-hors-dpc-non-adherent}}</li>
+            <li class="pdf-bloc">
+                <a href="../../assets/{{../pdfRelativeDir}}/{{contrat-formation-hors-dpc.pdf}}"><span class="icon-pdf"></span><span class="pdf-descriptionFichier">contrat de formation hors DPC</span></a>
+                <div class="pdf-nomFichier">contrat-formation-dpc.pdf</div>
+            </li>
+            <li>contrat de formation Hors DPC à retourner signé à l'adresse</li>
+            <li>{{organisateur}}</li>
+        </ul> 
+    {{/isHorsDPC}}
+    {{#isSalarie}}        
+    <h3>Salarié</h3>
+        <ul>
+            <li>Tarif adhérent: {{tarif-salarie-adherent}}</li>
+            <li>Tarif non adhérent: {{tarif-salarie-non-adherent}}</li>
+            <li class="pdf-bloc">
+                <a href="../../assets/{{../pdfRelativeDir}}/{{contrat-formation-salarie.pdf}}"><span class="icon-pdf"></span><span class="pdf-descriptionFichier">contrat de formation salarié</span></a>
+                <div class="pdf-nomFichier">contrat-formation-salarie.pdf</div>
+            </li>
+            <li>contrat de formation salarié à retourner signé à l'adresse</li>
+            <li>{{organisateur}}</li>
+        </ul>
+    {{/isSalarie}}
     
-Hors DPC:
-    - Tarif adhérents "A Propos": {{hors-dpc-adherent}} 
-    - Tarif non adhérents: {{hors-dpc-non-adherent}}
-    - contrat de formation Hors DPC (pdf)
-    - contrat de formation Hors DPC à retourner signé à l'adresse 
-    - {{organisateur}}
-        
-Salarié:
-    - Tarif adhérent: {{salarie-adherent}} 
-    - Tarif non adhérent: {{salarie-non-adherent}}
-    - convention de formation salarié (pdf)
-    - contrat de formation salarié à retourner signé à l'adresse 
-    - {{organisateur}}
+    <h3>Documents annexes</h3>
+    {{#isAxeFormation}}
+    <li class="pdf-bloc">
+        <a href="../../assets/pdf/reglement-interieur-formation-apropos.pdf"><span class="icon-pdf"></span><span class="pdf-descriptionFichier">réglement intérieur formation "a propos"</span></a>
+        <div class="pdf-nomFichier">reglement-interieur-formation-apropos.pdf</div>
+    </li>
+    {{/isAxeFormation}}      
+</div>
