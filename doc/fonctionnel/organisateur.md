@@ -1,10 +1,21 @@
-    - Hélène Le Roux
-        - adresse
-            - 3 allée du stade
-            - 22680 Etables-sur-Mer
-    - Kristell Bourdin
-        - adresse 8 rue Lamennais
-        - 22100 Dinan
-    - Muriel Rio-Fiorina
-        - adresse 8 rue Lamennais
-            - 22100 Dinan
+- 
+    id: "organisateur-hlr"
+    prenom: "Hélène"
+    nom: "Le Roux"
+    adresse: "3 allée du stade"
+    codePostal: "22680"
+    ville: "Etables-sur-Mer"
+- 
+    id: "organisateur-kb"
+    prenom: "Kristell"
+    nom: "Bourdin"
+    adresse: "8 rue Lamennais"
+    codePostal: "22100"
+    ville: "Dinan"
+- 
+    id: "organisateur-mrf"
+    prenom: "Muriel"
+    nom: "Rio-Fiorina"
+    adresse: "8 rue Lamennais"
+    codePostal: "22100"
+    ville: "Dinan"

@@ -12,6 +12,11 @@ financement:
     - dpc
     - hors-dpc
     - salarie
+tarif:
+    - tarif-adherent: 500
+    - tarif-non-adherent
+    - tarif-adherent-liberal: 
+    - tar
 ogdpc-reference: 32621500012 session 1
 ---
 
@@ -84,18 +89,3 @@ ogdpc-reference: 32621500012 session 1
         - Les exercices au quotidien (praxies et souffle ) ou remotiver les troupes
         - Présentation de matériel de souffle, pour qui et quand ?
         - Les limites de la prise en charge, quand adresser ? 
-
-## Inscription 
-<!--
-Formation accessible au format DPC :
-Inscription sur le site [ogdpc](http://www.ogdpc.fr/)
-N° de référence du programme : 32621500012 session 1
-[](https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/77561)
-Accessible également hors DPC et aux salarié(e)s
--->
-Si vous souhaitez vous pré-inscrire, merci de retourner à 
-A Propos 
-3 allée du stade 
-22680 Etables/Mer 
-
-le contrat ou la convention correspondant à votre situation, signé, accompagné du chèque de réservation et de l’enveloppe timbrée à votre nom et adresse (seuls les dossiers complets seront retenus)
