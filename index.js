@@ -10,6 +10,34 @@ var metalsmith = require('metalsmith'),
     Handlebars = require('handlebars'),
     fs = require('fs');
 
+Handlebars.registerHelper('isSousTitre', function(options){
+    if(this.sousTitre !== '')
+        return options.fn(this);
+    else
+        return options.inverse(this);
+});
+
+
+Handlebars.registerHelper('isOrganisateurHLR', function(options){
+    if(this.organisateur === 'organisateur-hlr')
+        return options.fn(this);
+    else
+        return options.inverse(this);
+});
+
+Handlebars.registerHelper('isOrganisateurKB', function(options){
+    if(this.organisateur === 'organisateur-kb')
+        return options.fn(this);
+    else
+        return options.inverse(this);
+});
+
+Handlebars.registerHelper('isOrganisateurMRF', function(options){
+    if(this.organisateur === 'organisateur-mrf')
+        return options.fn(this);
+    else
+        return options.inverse(this);
+});
 
 Handlebars.registerHelper('isAxePrevention', function(options){
     if(this.axe === 'prevention')

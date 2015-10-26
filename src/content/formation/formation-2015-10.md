@@ -1,5 +1,6 @@
 ---
-titre: Fentes faciales et incompétence vélo-pharyngée; bilan et prise en charge du nourrisson à l’adulte
+titre: Fentes faciales et incompétence vélo-pharyngée
+sous-titre: bilan et prise en charge du nourrisson à l’adulte 
 axe: formation
 layout: post.html
 ville: Brest
@@ -8,15 +9,15 @@ animation:
     - Cécile Chapuis, orthophoniste
 date: 2015-11-13
 dateAffichage: 13-14 novembre 2015
+organisateur: organisateur-kb
 financement:
     - dpc
     - hors-dpc
     - salarie
-tarif:
-    - tarif-adherent: 500
-    - tarif-non-adherent
-    - tarif-adherent-liberal: 
-    - tar
+tarif-adherent-salarie: 500
+tarif-non-adherent-salarie: 600
+tarif-adherent-liberal: 500
+tarif-non-adherent-liberal: 600
 ogdpc-reference: 32621500012 session 1
 ---
 
@@ -68,7 +69,7 @@ ogdpc-reference: 32621500012 session 1
         enfant comme les autres, ou presque : prévention de la dysoralité, évaluation des pré-requis et dépistage des troubles liés à l'IVP et à la division palatine
         - Quand et quelle éducation précoce ?
 
-## Journée 2
+### Journée 2
 
 - 9h00 - 12h30: Quatrième partie
     - **maîtriser son bilan**
