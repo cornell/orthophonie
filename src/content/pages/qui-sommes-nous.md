@@ -5,7 +5,6 @@ presidente: Hélène Le Roux
 secretaire: Kristell Bourdin
 secretaire-adjointe: Muriel Rio-Fiorina
 tresoriere: Blandine Le Pape
-membre-conseil-administration: 
-    - Carole Le Gaillard
-    - Amandine Lemiere
+membre-conseil-administration-01: Carole Le Gaillard
+membre-conseil-administration-02: Amandine Lemiere
 ---
