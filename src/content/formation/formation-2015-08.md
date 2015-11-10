@@ -8,7 +8,8 @@ animation:
 ville: Saint-Leu
 departement: dom-tom
 date: 2015-10-19
-dateAffichage: 19-20 octobre 2015 
+dateAffichage: 19-20 octobre 2015
+organisateur: organisateur-hlr
 financement:
     - DPC
     - FIF-PL

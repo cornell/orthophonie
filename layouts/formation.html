@@ -1,10 +1,11 @@
 {{> header}}
 <body id="js-formation" class="formation">
-{{> nav}}
-{{> axeFormation}}
-<div class="grid-2 grid-article">
-{{#each collections.formation}}        
-    {{#isAxeFormation}}{{> articleResume}}{{/isAxeFormation}}
-{{/each}}
-</div>
-{{> footer}}
+<div class="wrapper">
+    {{> nav}}
+    {{> axeFormation}}
+    <div class="grid-2 grid-article">
+    {{#each collections.formation}}        
+        {{#isAxeFormation}}{{> articleResume}}{{/isAxeFormation}}
+    {{/each}}
+    </div>
+    {{> footer}}

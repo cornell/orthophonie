@@ -12,11 +12,25 @@ var less = require('gulp-less');
     // uglify = require('gulp-uglify'),
 
 
-gulp.task('default', function(){
+gulp.task('copy', function(){
+	
+	del('src/content/posts/*.*');
+	
+	gulp.src([
+		'src/content/formation/*.md', 
+		'src/content/prevention/*.md', 
+		'src/content/recherche/*.md'
+		])
+		.pipe(gulp.dest('src/content/posts'));
+});
+
+gulp.task('default', ['copy'], function(){
 	
 	var assets = useref.assets();
 	
-	return gulp.src('layouts/partials/header.html')	
+	del('src/css');	
+	
+	return gulp.src('layouts/partials/header.html')			
 		.pipe(assets) // intègre les fichiers définis dans les blocs html dans le pipe
 		.pipe(less({
              strictMath: true
@@ -51,7 +65,9 @@ gulp.task('mv', function(){
 
 gulp.task('mv-clean', ['mv'], function(){
 	
-	del('dist/pages')
+	del('dist/pages');
+	/*del('src/css');
+	del('dist/css');*/
 });
 
 gulp.task('replace', function(){

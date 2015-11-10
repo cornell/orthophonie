@@ -1,13 +1,13 @@
 {{>header}}
 <body id="js-{{axe}}" class="{{axe}} post" style="background-color:white">
 <div class="wrapper">
-{{> nav}}
-{{#isAxePrevention}}{{> axePrevention}}{{/isAxePrevention}}
-{{#isAxeRecherche}}{{> axeRecherche}}{{/isAxeRecherche}}
-{{#isAxeFormation}}{{> axeFormation}}{{/isAxeFormation}}
-<article class="article-{{axe}} articleDetail">
-    {{> articleInfo}}
-    {{&contents}}   
-    {{>inscriptionTarif}}
-    </article>
-{{>footer}}
+    {{> nav}}
+    {{#isAxePrevention}}{{> axePrevention}}{{/isAxePrevention}}
+    {{#isAxeRecherche}}{{> axeRecherche}}{{/isAxeRecherche}}
+    {{#isAxeFormation}}{{> axeFormation}}{{/isAxeFormation}}
+    <article class="article-{{axe}} articleDetail">
+        {{> articleInfo}}
+        {{&contents}}   
+        {{>inscriptionTarif}}
+        </article>
+    {{>footer}}
