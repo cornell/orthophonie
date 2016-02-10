@@ -11,23 +11,26 @@ var metalsmith = require('metalsmith'),
     fs = require('fs');
 
 Handlebars.registerHelper('isSousTitre', function(options){
-    if(this.sousTitre !== '')
+    if(this["sous-titre"]) {
         return options.fn(this);
+    }
     else
         return options.inverse(this);
 });
 
 
 Handlebars.registerHelper('isOrganisateurHLR', function(options){
-    if(this.organisateur === 'organisateur-hlr')
+    if(this.organisateur === 'organisateur-hlr') {
         return options.fn(this);
+    }
     else
         return options.inverse(this);
 });
 
 Handlebars.registerHelper('isOrganisateurKB', function(options){
-    if(this.organisateur === 'organisateur-kb')
+    if(this.organisateur === 'organisateur-kb') {
         return options.fn(this);
+    }
     else
         return options.inverse(this);
 });
@@ -81,7 +84,7 @@ Handlebars.registerHelper('isSalarie', function(options){
         return options.inverse(this);
 });
 
-
+//  console.log(__dirname);
 metalsmith(__dirname)    
     .use(collections({
         pages: {
@@ -102,14 +105,18 @@ metalsmith(__dirname)
         formation: {
             pattern: 'content/formation/*.md',
             reverse: true
+        },
+        documents: {
+            pattern: 'content/documents/*.md',
+            reverse: true
         }
     }))
-    .use(myPlugin())
     .use(markdown())
     .use(excerpts())
+    .use(myPlugin())
     .use(permalinks({
-        pattern: ':collection/:titre'
-    }))
+         pattern: ':collection/:titre'
+     }))
     .use(layouts({
         engine: 'handlebars',
         // directory: 'layouts',

@@ -8,6 +8,7 @@ date: 2015-11-06
 dateAffichage: 6-7 novembre 2015 et 30 janvier 2016 
 animation:
     - Frédéric Pasquet, Orthophoniste, Maître de Conférences en Sciences du Langage
+organisateur: organisateur-hlr
 financement:
     - DPC
     - FIF-PL*
@@ -15,11 +16,10 @@ ogdpc:
     - reference: 32621500011 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/73386
 documents:
-    - contrat-formation-dpc.pdf
-    - contrat-formation-fif-pl.pdf
-    - contrat-formation-hors-dpc.pdf
-    - convention-formation-salarie.pdf    
-    - reglement-interieur-formation-apropos.pdf
+    contrat-formation-dpc.pdf: contrat de formation DPC
+    contrat-formation-fif-pl.pdf: contrat de formation FIF-PL    
+    contrat-formation-hors-dpc.pdf: contrat de formation hors DPC
+    convention-formation-salarie.pdf: convention de formation salarié
 ---
 
 ## Objectifs pédagogiques des 2 premiers jours
@@ -137,8 +137,9 @@ Si vous souhaitez vous pré-inscrire
     22680 Etables/Mer, 
 
 ainsi que les chèques de réservation et l’enveloppe timbrée à votre nom (seuls les dossiers complets seront retenus)
-Documents joints
+## Documents joints
 
+<!--
     Règlement intérieur A Propos (PDF – 413.8 ko)
     Programme novembre 2015 (PDF – 50.5 ko)
     Programme janvier 2016 (PDF – 40.7 ko)
@@ -146,3 +147,4 @@ Documents joints
     Convention de formation salarié(e)s (PDF – 548.7 ko)
     Contrat de formation hors DPC séquence 1 (PDF – 477.6 ko)
     Contrat de formation FIF-PL séquence 2 (PDF – 477.3 ko)
+-->

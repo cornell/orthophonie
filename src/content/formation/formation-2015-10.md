@@ -19,6 +19,7 @@ tarif-non-adherent-salarie: 600
 tarif-adherent-liberal: 500
 tarif-non-adherent-liberal: 600
 ogdpc-reference: 32621500012 session 1
+duree: une demi­‐journée en non présentiel (questionnaire en ligne) et 2 jours en présentiel avec le formateur
 ---
 
 ## Objectifs pédagogiques

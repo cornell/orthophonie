@@ -8,6 +8,7 @@ date: 2015-11-06
 dateAffichage: 6-7 novembre 2015 et 30 janvier 2016 
 animation:
     - Frédéric Pasquet, Orthophoniste, Maître de Conférences en Sciences du Langage
+organisateur: organisateur-hlr
 financement:
     - DPC
     - FIF-PL*

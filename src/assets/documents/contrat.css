@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'regular';
+    src: url('../../font/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../../font/sourcesanspro-regular-webfont.woff') format('woff'),
+         /*url('../../font/sourcesanspro-regular-webfont.ttf') format('truetype'),*/
+         url('../../font/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+}
+
+@font-face {
+    font-family: 'semibold';
+    src: url('../../font/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+         url('../../font/sourcesanspro-semibold-webfont.woff') format('woff'),
+         /*url('../../font/sourcesanspro-semibold-webfont.ttf') format('truetype'),*/
+         url('../../font/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+}
+
+html {
+    font-family: regular;    
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 1.6em;
+}
+
+ul>li {
+    margin-left: 20px;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.logo-ogdpc {
+    float:left;
+}
+
+.logo-apropos {
+    /*float: right;*/
+}
+
+.logo-apropos-container {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+}
+
+.clear {
+    clear: both;
+}

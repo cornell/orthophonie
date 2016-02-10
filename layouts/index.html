@@ -1,10 +1,11 @@
 {{> header}}
 <body id="js-accueil" class="accueil">
-{{> nav}}
-{{> axe}}
-<div class="grid-2 grid-article">
-{{#each collections.posts}}
-    {{> articleResume}}
-{{/each}}
-</div>
-{{> footer}}
+<div class="wrapper">
+    {{> nav}}
+    {{> axe}}
+    <div class="grid-2 grid-article">
+    {{#each collections.posts}}
+        {{> articleResume}}
+    {{/each}}
+    </div>
+    {{> footer}}

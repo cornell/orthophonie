@@ -1,8 +1,11 @@
 node_modules
-Thumbs.db
 dist
 report
 coverage
+bin
+obj
+posts
+Thumbs.db
 Code
 combined-*.css
 header.*.html

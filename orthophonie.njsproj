@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1a89f1ad-a764-490a-b2f1-003d1d378265}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>index.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="message.html" />
+    <Content Include="package.json" />
+    <Compile Include="gulpfile.js" />
+    <Compile Include="index.js" />
+    <Content Include="css\print.css" />
+    <Content Include="layouts\adhesion.html" />
+    <Content Include="layouts\contact.html" />
+    <Content Include="layouts\contrat-formation-dpc-hors-dpc.html" />
+    <Content Include="layouts\contrat-formation-salarie.html" />
+    <Content Include="layouts\formation.html" />
+    <Content Include="layouts\index.html" />
+    <Content Include="layouts\post.html" />
+    <Content Include="layouts\prevention.html" />
+    <Content Include="layouts\qui-sommes-nous.html" />
+    <Content Include="layouts\recherche.html" />
+    <Content Include="vendor\base.css" />
+    <Content Include="vendor\normalize.css" />
+    <Content Include="data\pas-de-tv-avant-3-ans\drawing.svg" />
+    <Content Include="data\pas-de-tv-avant-3-ans\pas-de-tv-avant-3-ans.svg" />
+    <Content Include="dist\css\combined-bb3e040d11.css" />
+    <Content Include="dist\font\sourcesanspro-regular-webfont.svg" />
+    <Content Include="dist\font\sourcesanspro-semibold-webfont.svg" />
+    <Compile Include="dist\js\jquery.min.js" />
+    <Compile Include="dist\js\myApp.js" />
+    <Content Include="dist\assets\images\avatar-membre-association-113.png" />
+    <Content Include="dist\assets\images\avatar-membre-association-56.png" />
+    <Content Include="dist\assets\images\avatar-membre-association.png" />
+    <Content Include="dist\assets\images\logo-apropos-112.png" />
+    <Content Include="dist\assets\images\logo-apropos-224.png" />
+    <Content Include="dist\assets\images\logo-apropos-500.png" />
+    <Content Include="dist\assets\images\logo-apropos-56.png" />
+    <Content Include="dist\assets\images\logo-apropos.png" />
+    <Content Include="dist\assets\images\logo.png" />
+    <Content Include="dist\assets\pdf\contrat.css" />
+    <Content Include="dist\assets\pdf\logo-apropos-112.png" />
+    <Content Include="dist\assets\pdf\logo-apropos-500.png" />
+    <Content Include="dist\assets\pdf\logo-apropos-56.png" />
+    <Content Include="dist\assets\pdf\logo-ogdpc-2.png" />
+    <Content Include="dist\assets\pdf\logo-ogdpc-3.png" />
+    <Content Include="dist\assets\pdf\logo-ogdpc-500.png" />
+    <Content Include="dist\assets\pdf\logo-ogdpc.png" />
+    <Content Include="dist\assets\pdf\MWedito22072014.jpg" />
+    <Content Include="dist\assets\pdf\logo-agdpc.gif" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\index.html" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\contrat.css" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\logo-apropos-112.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\logo-apropos-500.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\logo-apropos-56.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\logo-ogdpc-2.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\logo-ogdpc-3.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\logo-ogdpc-500.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\logo-ogdpc.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\MWedito22072014.jpg" />
+    <Content Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc\logo-agdpc.gif" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\index.html" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\contrat.css" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\logo-apropos-112.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\logo-apropos-500.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\logo-apropos-56.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\logo-ogdpc-2.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\logo-ogdpc-3.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\logo-ogdpc-500.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\logo-ogdpc.png" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\MWedito22072014.jpg" />
+    <Content Include="dist\assets\pdf\contrat-formation-salarie\logo-agdpc.gif" />
+    <Content Include="dist\content\pages\formateur\index.html" />
+    <Content Include="dist\formation\approche-developpementale-de-l-evaluation-des-dysfonctionnements-du-langage-oral-et-ecrit-chez-l-enfant-et-l-adolescent-batterie-clea\index.html" />
+    <Content Include="dist\formation\approche-metacognitive-dans-la-prise-en-charge-orthophonique-des-pathologies-du-langage-ecrit\index.html" />
+    <Content Include="dist\formation\contrat-formation\index.html" />
+    <Content Include="dist\formation\fentes-faciales-et-incompetence-velo-pharyngee\index.html" />
+    <Content Include="dist\formation\l-accompagnement-parental-dans-la-prise-en-charge-des-troubles-du-langage-oral\index.html" />
+    <Content Include="dist\formation\le-bilan-et-la-reeducation-vocale-le-timbre-en-question-niveau-1\index.html" />
+    <Content Include="dist\formation\le-bilan-et-la-reeducation-vocale-le-timbre-en-question-niveau-2\index.html" />
+    <Content Include="dist\formation\les-moyens-technologiques-de-suppleance-pour-les-jeunes-porteurs-de-troubles-du-langage-ecrit\index.html" />
+    <Content Include="dist\formation\metacognition-et-attention-executive-dans-la-prise-en-charge-orthophonique-des-pathologies-du-langage-ecrit\index.html" />
+    <Content Include="dist\formation\pourquoi-et-comment-adherer\index.html" />
+    <Content Include="dist\formation\tarif-preferentiel-pour-les-adherents-d-a-propos\index.html" />
+    <Content Include="doc\fonctionnel\fonctionnement_fichier_markdown.svg" />
+    <Content Include="doc\fonctionnel\fonctionnel.md" />
+    <Content Include="doc\fonctionnel\organisateur.md" />
+    <Content Include="doc\sketch\apropos-01.png" />
+    <Content Include="doc\sketch\apropos-02.png" />
+    <Content Include="doc\sketch\inkscape-logo-modif.png" />
+    <Content Include="doc\sketch\inkscape-logo-modif.svg" />
+    <Content Include="doc\svg\ink-apropos-logo.png" />
+    <Content Include="doc\svg\ink-logo-couleurs.png" />
+    <Content Include="doc\svg\logo-apropos-112.png" />
+    <Content Include="doc\svg\logo-apropos-56.png" />
+    <Content Include="doc\svg\logo-apropos.png" />
+    <Content Include="doc\svg\ink-apropos-logo.svg" />
+    <Content Include="doc\svg\ink-logo-couleurs.svg" />
+    <Content Include="doc\svg\ink-logo-formation-old.svg" />
+    <Content Include="doc\svg\ink-logo-formation.svg" />
+    <Content Include="doc\svg\ink-logo-prevention-old.svg" />
+    <Content Include="doc\svg\ink-logo-prevention.svg" />
+    <Content Include="doc\svg\ink-logo-recherche-old.svg" />
+    <Content Include="doc\svg\ink-logo-recherche.svg" />
+    <Content Include="doc\capture\00\00-accueil.png" />
+    <Content Include="doc\capture\00\01-prevention-list.png" />
+    <Content Include="doc\capture\00\02-recherche-list.png" />
+    <Content Include="doc\capture\00\03-formation-list.png" />
+    <Content Include="doc\capture\00\04-prevention-post.png" />
+    <Content Include="doc\capture\00\05-formation-post.png" />
+    <Content Include="doc\capture\01\11-accueil.png" />
+    <Content Include="doc\capture\01\11-prevention-list.png" />
+    <Content Include="doc\capture\01\12-recherche-list.png" />
+    <Content Include="doc\capture\01\13-formation-list.png" />
+    <Content Include="doc\capture\01\14-prevention-post.png" />
+    <Content Include="doc\capture\01\15-formation-post.png" />
+    <Content Include="doc\capture\02\21-accueil.png" />
+    <Content Include="doc\capture\02\21-prevention-list.png" />
+    <Content Include="doc\sketch\v01\01-prevention-resume.png" />
+    <Content Include="doc\sketch\v01\02-recherche-resume.png" />
+    <Content Include="doc\sketch\v01\03-formation-resume.png" />
+    <Content Include="doc\sketch\v02\00-desktop-accueil-v3.png" />
+    <Content Include="doc\sketch\v02\00-desktop-accueil-v4.png" />
+    <Content Include="doc\sketch\v02\00-desktop-accueil-v5.png" />
+    <Content Include="doc\sketch\v02\01-desktop-prevention-detail.png" />
+    <Content Include="doc\sketch\v02\01-desktop-prevention-resume-v2.png" />
+    <Content Include="doc\sketch\v02\02-desktop-recherche-resume-v2.png" />
+    <Content Include="doc\sketch\v02\03-desktop-formation-resume-v2.png" />
+    <Content Include="doc\sketch\v02\03-desktop-qui-sommes-nous.png" />
+    <Content Include="doc\sketch\v02\04-desktop-qui-sommes-nous.png" />
+    <Content Include="doc\sketch\v02\bas-de-page.png" />
+    <Content Include="doc\sketch\v02\mobile.png" />
+    <Content Include="doc\sketch\v02\04-desktop-qui-sommes-nous.json" />
+    <Content Include="doc\sketch\v02\accueil-v5.json" />
+    <Content Include="doc\sketch\v02\desktop-accueil-v2.json" />
+    <Content Include="doc\sketch\v02\desktop-accueil-v3.json" />
+    <Content Include="doc\sketch\v02\desktop-accueil-v4.json" />
+    <Content Include="doc\sketch\v02\desktop-accueil.json" />
+    <Content Include="doc\sketch\v02\desktop-formation-resume.json" />
+    <Content Include="doc\sketch\v02\desktop-prevention-detail.json" />
+    <Content Include="doc\sketch\v02\desktop-prevention-resume.json" />
+    <Content Include="doc\sketch\v02\desktop-recherche-resume.json" />
+    <Content Include="doc\sketch\v02\mobile.json" />
+    <Content Include="layouts\partials\article-info.html" />
+    <Content Include="layouts\partials\article-resume.html" />
+    <Content Include="layouts\partials\axe-formation.html" />
+    <Content Include="layouts\partials\axe-prevention.html" />
+    <Content Include="layouts\partials\axe-recherche.html" />
+    <Content Include="layouts\partials\axe.html" />
+    <Content Include="layouts\partials\flexDemo.html" />
+    <Content Include="layouts\partials\footer.html" />
+    <Content Include="layouts\partials\header.html" />
+    <Content Include="layouts\partials\header.concat.html" />
+    <Content Include="layouts\partials\inscription-tarif.html" />
+    <Content Include="layouts\partials\nav01.html" />
+    <Content Include="layouts\partials\nav.html" />
+    <Content Include="layouts\partials\flexDemo.css" />
+    <Content Include="layouts\partials\nav.css" />
+    <Compile Include="layouts\partials\nav.js" />
+    <Content Include="src\css\combined-bb3e040d11.css" />
+    <Content Include="src\font\sourcesanspro-regular-webfont.svg" />
+    <Content Include="src\font\sourcesanspro-semibold-webfont.svg" />
+    <Compile Include="src\js\jquery.min.js" />
+    <Compile Include="src\js\myApp.js" />
+    <Content Include="src\assets\images\avatar-membre-association-113.png" />
+    <Content Include="src\assets\images\avatar-membre-association-56.png" />
+    <Content Include="src\assets\images\avatar-membre-association.png" />
+    <Content Include="src\assets\images\logo-apropos-112.png" />
+    <Content Include="src\assets\images\logo-apropos-224.png" />
+    <Content Include="src\assets\images\logo-apropos-500.png" />
+    <Content Include="src\assets\images\logo-apropos-56.png" />
+    <Content Include="src\assets\images\logo-apropos.png" />
+    <Content Include="src\assets\images\logo.png" />
+    <Content Include="src\assets\pdf\contrat.css" />
+    <Content Include="src\assets\pdf\logo-apropos-112.png" />
+    <Content Include="src\assets\pdf\logo-apropos-500.png" />
+    <Content Include="src\assets\pdf\logo-apropos-56.png" />
+    <Content Include="src\assets\pdf\logo-ogdpc-2.png" />
+    <Content Include="src\assets\pdf\logo-ogdpc-3.png" />
+    <Content Include="src\assets\pdf\logo-ogdpc-500.png" />
+    <Content Include="src\assets\pdf\logo-ogdpc.png" />
+    <Content Include="src\assets\pdf\MWedito22072014.jpg" />
+    <Content Include="src\assets\pdf\logo-agdpc.gif" />
+    <Content Include="src\assets\pdf\contrat-formation-dpc-hors-dpc.md" />
+    <Content Include="src\assets\pdf\contrat-formation-salarie.md" />
+    <Content Include="src\content\formation\contrat-formation.md" />
+    <Content Include="src\content\formation\formation-2015-01.md" />
+    <Content Include="src\content\formation\formation-2015-02.md" />
+    <Content Include="src\content\formation\formation-2015-03.md" />
+    <Content Include="src\content\formation\formation-2015-04.md" />
+    <Content Include="src\content\formation\formation-2015-05.md" />
+    <Content Include="src\content\formation\formation-2015-06.md" />
+    <Content Include="src\content\formation\formation-2015-07.md" />
+    <Content Include="src\content\formation\formation-2015-08.md" />
+    <Content Include="src\content\formation\formation-2015-09.md" />
+    <Content Include="src\content\formation\formation-2015-10.md" />
+    <Content Include="src\content\pages\apropos.md" />
+    <Content Include="src\content\pages\contact.md" />
+    <Content Include="src\content\pages\formateur.md" />
+    <Content Include="src\content\pages\formation.md" />
+    <Content Include="src\content\pages\index.md" />
+    <Content Include="src\content\pages\prevention.md" />
+    <Content Include="src\content\pages\qui-sommes-nous.md" />
+    <Content Include="src\content\pages\recherche.md" />
+    <Content Include="src\content\posts\contrat-formation.md" />
+    <Content Include="src\content\posts\formation-2015-01.md" />
+    <Content Include="src\content\posts\formation-2015-02.md" />
+    <Content Include="src\content\posts\formation-2015-03.md" />
+    <Content Include="src\content\posts\formation-2015-04.md" />
+    <Content Include="src\content\posts\formation-2015-05.md" />
+    <Content Include="src\content\posts\formation-2015-06.md" />
+    <Content Include="src\content\posts\formation-2015-07.md" />
+    <Content Include="src\content\posts\formation-2015-08.md" />
+    <Content Include="src\content\posts\formation-2015-09.md" />
+    <Content Include="src\content\posts\formation-2015-10.md" />
+    <Content Include="src\content\posts\prevention-2015-01.md" />
+    <Content Include="src\content\posts\prevention-2015-02.md" />
+    <Content Include="src\content\posts\prevention-2015-03.md" />
+    <Content Include="src\content\posts\prevention-2015-04.md" />
+    <Content Include="src\content\prevention\prevention-2015-01.md" />
+    <Content Include="src\content\prevention\prevention-2015-02.md" />
+    <Content Include="src\content\prevention\prevention-2015-03.md" />
+    <Content Include="src\content\prevention\prevention-2015-04.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css" />
+    <Folder Include="data" />
+    <Folder Include="data\pas-de-tv-avant-3-ans" />
+    <Folder Include="dist" />
+    <Folder Include="dist\assets" />
+    <Folder Include="dist\assets\formation-2015-01" />
+    <Folder Include="dist\assets\formation-2015-04" />
+    <Folder Include="dist\assets\formation-2015-05" />
+    <Folder Include="dist\assets\formation-2015-06" />
+    <Folder Include="dist\assets\formation-2015-07" />
+    <Folder Include="dist\assets\formation-2015-08" />
+    <Folder Include="dist\assets\formation-2015-09" />
+    <Folder Include="dist\assets\formation-2015-10" />
+    <Folder Include="dist\assets\images" />
+    <Folder Include="dist\assets\pdf" />
+    <Folder Include="dist\assets\pdf\contrat-formation-dpc-hors-dpc" />
+    <Folder Include="dist\assets\pdf\contrat-formation-salarie" />
+    <Folder Include="dist\content" />
+    <Folder Include="dist\content\pages" />
+    <Folder Include="dist\content\pages\formateur" />
+    <Folder Include="dist\css" />
+    <Folder Include="dist\font" />
+    <Folder Include="dist\formation" />
+    <Folder Include="dist\formation\approche-developpementale-de-l-evaluation-des-dysfonctionnements-du-langage-oral-et-ecrit-chez-l-enfant-et-l-adolescent-batterie-clea" />
+    <Folder Include="dist\formation\approche-metacognitive-dans-la-prise-en-charge-orthophonique-des-pathologies-du-langage-ecrit" />
+    <Folder Include="dist\formation\contrat-formation" />
+    <Folder Include="dist\formation\fentes-faciales-et-incompetence-velo-pharyngee" />
+    <Folder Include="dist\formation\l-accompagnement-parental-dans-la-prise-en-charge-des-troubles-du-langage-oral" />
+    <Folder Include="dist\formation\le-bilan-et-la-reeducation-vocale-le-timbre-en-question-niveau-1" />
+    <Folder Include="dist\formation\le-bilan-et-la-reeducation-vocale-le-timbre-en-question-niveau-2" />
+    <Folder Include="dist\formation\les-moyens-technologiques-de-suppleance-pour-les-jeunes-porteurs-de-troubles-du-langage-ecrit" />
+    <Folder Include="dist\formation\metacognition-et-attention-executive-dans-la-prise-en-charge-orthophonique-des-pathologies-du-langage-ecrit" />
+    <Folder Include="dist\formation\pourquoi-et-comment-adherer" />
+    <Folder Include="dist\formation\tarif-preferentiel-pour-les-adherents-d-a-propos" />
+    <Folder Include="dist\js" />
+    <Folder Include="doc" />
+    <Folder Include="doc\capture" />
+    <Folder Include="doc\capture\00" />
+    <Folder Include="doc\capture\01" />
+    <Folder Include="doc\capture\02" />
+    <Folder Include="doc\fonctionnel" />
+    <Folder Include="doc\Nouveau dossier" />
+    <Folder Include="doc\sketch" />
+    <Folder Include="doc\sketch\v01" />
+    <Folder Include="doc\sketch\v02" />
+    <Folder Include="doc\sketch\v03" />
+    <Folder Include="doc\svg" />
+    <Folder Include="layouts" />
+    <Folder Include="layouts\partials" />
+    <Folder Include="src" />
+    <Folder Include="src\assets" />
+    <Folder Include="src\assets\formation-2015-01" />
+    <Folder Include="src\assets\formation-2015-04" />
+    <Folder Include="src\assets\formation-2015-05" />
+    <Folder Include="src\assets\formation-2015-06" />
+    <Folder Include="src\assets\formation-2015-07" />
+    <Folder Include="src\assets\formation-2015-08" />
+    <Folder Include="src\assets\formation-2015-09" />
+    <Folder Include="src\assets\formation-2015-10" />
+    <Folder Include="src\assets\images" />
+    <Folder Include="src\assets\pdf" />
+    <Folder Include="src\content" />
+    <Folder Include="src\content\formation" />
+    <Folder Include="src\content\pages" />
+    <Folder Include="src\content\posts" />
+    <Folder Include="src\content\prevention" />
+    <Folder Include="src\css" />
+    <Folder Include="src\font" />
+    <Folder Include="src\js" />
+    <Folder Include="vendor" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

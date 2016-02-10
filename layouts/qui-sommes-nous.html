@@ -1,81 +1,85 @@
 {{> header}}
 <body id="js-quiSommesNous" class="quiSommesNous">
-{{> nav}}
-<div class="quiSommesNous-container1">
-    <div class="quiSommesNous-container2">
-        <div class="quiSommesNous-header">
-            <div class="u-strong u-uppercase">A PROPOS</div>
-            <div><span class="u-strong u-uppercase">a</span>ssociation de <span class="u-strong u-uppercase">p</span>révention et de <span  class="u-strong u-uppercase">R</span>echerche en <span  class="u-strong u-uppercase">O</span>rthophonie ...</div>
-            <div><span class="u-strong u-uppercase">p</span>rogrammes <span class="u-strong u-uppercase">o</span>rthophoniques d'éducation à la <span  class="u-strong u-uppercase">s</span>anté</div>    
+<div class="wrapper">
+    {{> nav}}
+    <div class="quiSommesNous-container1">
+        <!--<a class="quiSommesNous-logo-apropos" href="/pages/index"><div>&nbsp;</div></a>-->
+        <div class="quiSommesNous-container2">
+            <div class="quiSommesNous-header">
+                <div class="u-strong u-uppercase">A PROPOS</div>
+                <div><span class="u-strong u-uppercase">a</span>ssociation de <span class="u-strong u-uppercase">p</span>révention et de <span  class="u-strong u-uppercase">R</span>echerche en <span  class="u-strong u-uppercase">O</span>rthophonie ...</div>
+                <div><span class="u-strong u-uppercase">p</span>rogrammes <span class="u-strong u-uppercase">o</span>rthophoniques d'éducation à la <span  class="u-strong u-uppercase">s</span>anté</div>    
+            </div>
         </div>
+        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
-</div>
-<div class="quiSommesNous-body">
-    <p class="quiSommesNous-presentation">
-    L'association a vu le jour en juin 2011 à l’initiative de 5 orthophonistes bretons, désireux de promouvoir la prévention, partie intégrante du champ d’intervention des orthophonistes depuis son inscription officielle en 1992 dans notre décret de compétence.
-    </p>
-    <p>Nombre d’entre nous sont ou seront sollicités pour réaliser des actions, des missions de prévention sur le terrain.</p>
-    <p>A Propos, <span class="u-strong">ouvert à tous les orthophonistes</span>, constitue un point d’appui institutionnel et logistique pour mener à bien ces actions.</p>
-    <p>Les objectifs d'A PROPOS couvrent les 3 axes suivants: 
-        <ul>
-            <li><a class="readMore" href="/prevention">Prévention</a></li>
-            <li><a class="readMore" href="/recherche">Recherche</a></li>
-            <li><a class="readMore" href="/formation">Formation</a></li>
-        </ul>
-    </p>
-    <button class="btn-adhesion">Adhérer à l'association</button>
+    <div class="quiSommesNous-body">
+        <p class="quiSommesNous-presentation">
+        L'association a vu le jour en juin 2011 à l’initiative de 5 orthophonistes bretons, désireux de promouvoir la prévention, partie intégrante du champ d’intervention des orthophonistes depuis son inscription officielle en 1992 dans notre décret de compétence.
+        </p>
+        <p>Nombre d’entre nous sont ou seront sollicités pour réaliser des actions, des missions de prévention sur le terrain.</p>
+        <p>A Propos, <span class="u-strong">ouvert à tous les orthophonistes</span>, constitue un point d’appui institutionnel et logistique pour mener à bien ces actions.</p>
+        <p>Les objectifs d'A PROPOS couvrent les 3 axes suivants: 
+            <ul>
+                <li><a class="" href="/prevention">Prévention</a></li>
+                <li><a class="" href="/recherche">Recherche</a></li>
+                <li><a class="" href="/formation">Formation</a></li>
+            </ul>
+        </p>
+        <div class="clear"></div>
+        <div style="text-align:center;">
+            <button class="btn-adhesion">Adhérer à l'association</button>
+        </div>
+        <div class="MembreAssociation-list">
+            <h2 class="MembreAssociationList-titre">Les Membres de l'association</h2>
+            <div class="MembreAssociation">
+                <h3 class="MembreAssociation-titre">Présidente</h3>
+                <span class="imageAvatar imageAvatar-01 imageAvatar-association"></span>
+                <div class="MembreAssociation-contenu">
+                    <div class="MembreAssociation-nomComplet">{{presidente}}</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
+                </div>
+            </div>
+            <div class="MembreAssociation">
+                <h3 class="MembreAssociation-titre">Secrétaire</h3>
+                <span class="imageAvatar imageAvatar-03 imageAvatar-association"></span>
+                <div class="MembreAssociation-contenu">
+                    <div class="MembreAssociation-nomComplet">{{secretaire}}</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
+                </div>
+            </div>
+            <div class="MembreAssociation">
+                <h3 class="MembreAssociation-titre">Secrétaire adjointe</h3>
+                <span class="imageAvatar imageAvatar-05 imageAvatar-association"></span>
+                <div class="MembreAssociation-contenu">
+                    <div class="MembreAssociation-nomComplet">{{secretaire-adjointe}}</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
+                </div>
+            </div>
+            <div class="MembreAssociation">
+                <h3 class="MembreAssociation-titre">Trésorière</h3>
+                <span class="imageAvatar imageAvatar-03 imageAvatar-association"></span>
+                <div class="MembreAssociation-contenu">
+                    <div class="MembreAssociation-nomComplet">{{tresoriere}}</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
+                </div>
+            </div>
+            <div class="MembreAssociation">
+                <h3 class="MembreAssociation-titre">Membres du conseil d'administration</h3>
+                <span class="imageAvatar imageAvatar-06 imageAvatar-association"></span>
+                <div class="MembreAssociation-contenu">
+                    <div class="MembreAssociation-nomComplet">{{membre-conseil-administration-01}}</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
+                </div>
+            </div>
+            <div class="MembreAssociation">
+                <span class="imageAvatar imageAvatar-04 imageAvatar-association"></span>
+                <div class="MembreAssociation-contenu">
+                    <div class="MembreAssociation-nomComplet">{{membre-conseil-administration-02}}</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
+                </div>            
+            </div>
+        </div>    
         
-    <div class="MembreAssociation-list">
-        <h2 class="MembreAssociationList-titre">Les Membres de l'association</h2>
-        <div class="MembreAssociation">
-            <h3 class="MembreAssociation-titre">Présidente</h3>
-            <span class="imageAvatar imageAvatar-01 imageAvatar-association"></span>
-            <div class="MembreAssociation-contenu">
-                <div class="MembreAssociation-nomComplet">{{presidente}}</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
-            </div>
-        </div>
-        <div class="MembreAssociation">
-            <h3 class="MembreAssociation-titre">Secrétaire</h3>
-            <span class="imageAvatar imageAvatar-03 imageAvatar-association"></span>
-            <div class="MembreAssociation-contenu">
-                <div class="MembreAssociation-nomComplet">{{secretaire}}</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
-            </div>
-        </div>
-        <div class="MembreAssociation">
-            <h3 class="MembreAssociation-titre">Secrétaire adjointe</h3>
-            <span class="imageAvatar imageAvatar-05 imageAvatar-association"></span>
-            <div class="MembreAssociation-contenu">
-                <div class="MembreAssociation-nomComplet">{{secretaire-adjointe}}</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
-            </div>
-        </div>
-        <div class="MembreAssociation">
-            <h3 class="MembreAssociation-titre">Trésorière</h3>
-            <span class="imageAvatar imageAvatar-03 imageAvatar-association"></span>
-            <div class="MembreAssociation-contenu">
-                <div class="MembreAssociation-nomComplet">{{tresoriere}}</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
-            </div>
-        </div>
-        <div class="MembreAssociation">
-            <h3 class="MembreAssociation-titre">Membres du conseil d'administration</h3>
-            <span class="imageAvatar imageAvatar-06 imageAvatar-association"></span>
-            <div class="MembreAssociation-contenu">
-                <div class="MembreAssociation-nomComplet">{{membre-conseil-administration-01}}</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
-            </div>
-        </div>
-        <div class="MembreAssociation">
-            <span class="imageAvatar imageAvatar-04 imageAvatar-association"></span>
-            <div class="MembreAssociation-contenu">
-                <div class="MembreAssociation-nomComplet">{{membre-conseil-administration-02}}</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi distinctio et unde dolores, quibusdam nihil aliquid natus voluptates earum quos assumenda nobis pariatur placeat tempora. Repellendus, minus aut porro amet.</div>
-            </div>            
-        </div>
-    </div>    
-       
-</div>
-{{> footer}}
+    </div>
+    {{> footer}}

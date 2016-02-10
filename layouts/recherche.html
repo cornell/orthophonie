@@ -1,10 +1,11 @@
 {{> header}}
 <body id="js-recherche" class="recherche">
-{{> nav}}
-{{> axeRecherche}}
-<div class="grid-2 grid-article">
-{{#each collections.recherche}}        
-    {{#isAxeRecherche}}{{> articleResume}}{{/isAxeRecherche}}
-{{/each}}
-</div>
-{{> footer}}
+<div class="wrapper">
+    {{> nav}}
+    {{> axeRecherche}}
+    <div class="grid-2 grid-article">
+    {{#each collections.recherche}}        
+        {{#isAxeRecherche}}{{> articleResume}}{{/isAxeRecherche}}
+    {{/each}}
+    </div>
+    {{> footer}}

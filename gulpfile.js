@@ -9,14 +9,29 @@ var gulpif = require('gulp-if');
 var useref = require('gulp-useref');
 var minifyCss = require('gulp-minify-css');
 var less = require('gulp-less');
+var html2pdf = require('gulp-html2pdf');
     // uglify = require('gulp-uglify'),
 
 
-gulp.task('default', function(){
+gulp.task('copy', function(){
+	
+	del('src/content/posts/*.*');
+	
+	gulp.src([
+		'src/content/formation/*.md', 
+		'src/content/prevention/*.md', 
+		'src/content/recherche/*.md'
+		])
+		.pipe(gulp.dest('src/content/posts'));
+});
+
+gulp.task('default', ['copy'], function(){
 	
 	var assets = useref.assets();
 	
-	return gulp.src('layouts/partials/header.html')	
+	del('src/css');	
+	
+	return gulp.src('layouts/partials/header.html')			
 		.pipe(assets) // intègre les fichiers définis dans les blocs html dans le pipe
 		.pipe(less({
              strictMath: true
@@ -51,7 +66,9 @@ gulp.task('mv', function(){
 
 gulp.task('mv-clean', ['mv'], function(){
 	
-	del('dist/pages')
+	del('dist/pages');
+	/*del('src/css');
+	del('dist/css');*/
 });
 
 gulp.task('replace', function(){
@@ -120,4 +137,17 @@ gulp.task('replace', function(){
 		.pipe(replace('href="/pages/index', 'href="../index.html'))
 		.pipe(replace('href="/pages/', 'href="../'))
 		.pipe(gulp.dest('dist/qui-sommes-nous'));						
+});
+
+// gulp.task('', function(){
+//   
+//   'contrat-formation-dpc-hors-dpc.md'
+//   'contrat-formation-salarie.md'  
+// })
+
+gulp.task('pdf', function () {
+    return gulp
+        .src('./src/content/documents/*.html')
+        .pipe(html2pdf())
+        .pipe(gulp.dest('./src/content/documents'));
 });

@@ -1,0 +1,141 @@
+html, body {
+    font-family: verdana;
+    font-size: 16px;
+    line-height: 1.4;
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-container, .pusher {
+    height: 100%;
+}
+
+.pusher {
+    transition-duration: .3s;
+    transform: translateX(0);
+    height: 100%;
+}
+
+.header{
+    /*position: fixed;*/
+    left: 0;
+    right: 0;
+    height: 66px;
+    line-height: 66px;
+    color: #FFF;
+    background-color: hsl(177, 70%, 41%);
+}
+
+.header__logo {
+    font-weight: bold;
+    padding-right: 25px;
+    float: left;
+}
+
+.site-content {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; /* safari */
+}
+
+.menu {
+    /*float: left;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 180px;
+    background-color: hsl(177, 70%, 36%);
+    /*display: none;*/    
+    transform: translateX(-180px);
+    /*transition-duration: .3s;*/
+}
+
+.width-sidebar .pusher {
+    transform: translateX(180px);
+}
+
+.width-sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.menu a {
+    padding: 0 10px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    /*text-align: center;*/
+    border-bottom: 1px solid hsl(177, 70%, 41%);
+}
+
+.menu a:hover {
+    color: hsl(177, 70%, 51%)
+}
+
+.container {
+    /*clear: both;*/
+    margin: 0 10px;
+}
+
+.header__icon {
+    position: relative;
+    display: block;
+    float: left;
+    width: 51px;
+    height: 66px;
+    /*background-color: hsla(0, 0%, 100%, .5);*/
+    
+    cursor: pointer;
+}
+
+.header__icon::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1.4rem;
+    height: 0;
+    top: 26px;
+    left: 15px;
+    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+}
+
+@media only screen and (min-width: 515px) {
+ 
+    .header{
+        position: fixed;
+    }
+
+    .site-content {
+        padding-top: 66px;
+    }
+    
+    .menu {
+        position: static;
+        transform: none;
+        width: auto;  
+        background-color: inherit; 
+        transition-duration: initial;    
+    }
+    
+    .menu a {
+        display: inline-block;
+        border-bottom: none;
+    }   
+}

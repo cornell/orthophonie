@@ -3,6 +3,8 @@ titre: Pourquoi et comment adhérer ?
 dateAffichage: 2015 
 axe: formation
 layout: post.html
+documents:
+    bulletin-adhesion-2015.pdf: bulletin d'adhésion 2015
 ---
 Vous aimez l’orthophonie et souhaitez que votre métier soit mieux connu du plus grand nombre ?
 
@@ -21,6 +23,6 @@ Adhérez, pour participer activement à la vie de l’association, proposer des 
 PDF - 55.7 ko
 
 A PROPOS est votre association, ouverte à toutes les idées et à tous les orthophonistes sans exception.
-Documents joints
 
-    Bulletin d’adhésion 2015 (PDF – 68.1 ko)
+## Documents joints
+

@@ -14,10 +14,9 @@ ogdpc:
     - reference: 32621500007 session 1
     - fiche: https://www.ogdpc.fr/index.php/ogdpc/fiche_programme/2263/58625
 documents:
-    - contrat-formation-dpc.pdf
-    - contrat-formation-fif-pl.pdf
-    - convention-formation-salarie.pdf    
-    - reglement-interieur-formation-apropos.pdf
+    contrat-formation-dpc.pdf: contrat de formation DPC
+    contrat-formation-fif-pl.pdf: contrat de formation FIF-PL
+    convention-formation-salarie.pdf: convention de formation salarié
 ---
 La plainte attentionnelle est quasi constante lors de l’anamnèse des patients avec des 
 troubles du langage écrit avec la question d’un trouble attentionnel sous-jacent. 
@@ -113,11 +112,13 @@ Si vous souhaitez vous pré-inscrire, merci de retourner à
 
 le contrat ou la convention correspondant à votre situation, signé, accompagné du chèque de réservation et de l’enveloppe timbrée à votre nom (seuls les dossiers complets seront retenus)
 
-Documents joints
+## Documents joints
 
+<!--
     Règlement intérieur A Propos (PDF – 413.8 ko)
     Programme (PDF – 37.9 ko)
     Objectifs (PDF – 21.9 ko)
     Convention de formation salarié(e)s (PDF – 547.5 ko)
     Contrat de formation DPC (PDF – 544.4 ko)
     Contrat de formation FIF-PL (PDF – 472.9 ko)
+-->
