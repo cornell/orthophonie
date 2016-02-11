@@ -8,7 +8,10 @@ var metalsmith = require('metalsmith'),
     excerpts = require('metalsmith-excerpts'),
     myPlugin = require('metalsmith-my-plugin'),
     Handlebars = require('handlebars'),
-    fs = require('fs');
+    fs = require('fs'),
+    multimatch = require('multimatch');
+    
+    console.log(multimatch);
 
 Handlebars.registerHelper('isSousTitre', function(options){
     if(this["sous-titre"]) {
@@ -84,8 +87,17 @@ Handlebars.registerHelper('isSalarie', function(options){
         return options.inverse(this);
 });
 
-//  console.log(__dirname);
-metalsmith(__dirname)    
+metalsmith(__dirname)
+    .use(function(files, metalsmith, done) {
+
+        Object.keys(files).forEach(function(file){
+            
+            console.log(file);
+            var result = multimatch([file], ['**/*.md']);
+            console.log(result);
+        });
+        done();
+    })
     .use(collections({
         pages: {
             pattern: 'content/pages/*.md'
@@ -139,5 +151,45 @@ metalsmith(__dirname)
         
         // console.log(this.metadata().posts.length);
         // console.log(this.metadata().posts[0]);
-	  })
+        
+        createHtmlForPdf();
+	  });
+
+
+function createHtmlForPdf(){
+    
+    
+    metalsmith(__dirname)    
+        .use(collections({
+            formation: {
+                pattern: 'content/formation/pdf/*/*.md',
+                reverse: true
+            }
+        }))
+        //.use(myPlugin())
+        .use(markdown())
+        //.use(excerpts())    
+        .use(layouts({
+            engine: 'handlebars',
+            // directory: 'layouts',
+            partials: {
+                header: 'partials/header.concat',
+                footer: 'partials/footer'                
+        }
+        }))
+        .destination('./dist2');
+        // .build(function(err) {
+        //     if (err) throw err;
+        //     
+        //     myHtmlToPdf()
+        //     // console.log(this.metadata().posts.length);
+        //     // console.log(this.metadata().posts[0]);
+        // })      
       
+}
+
+var myHtmlToPdf = function(files, metalsmith, done) {
+
+    
+    done();
+};
