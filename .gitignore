@@ -6,6 +6,10 @@ bin
 obj
 posts
 Thumbs.db
+.vs
 Code
 combined-*.css
 header.*.html
+*.sln
+*.suo
+.aspell.*

@@ -1,3 +1,4 @@
+body.adhesion,
 body.quiSommesNous {
     background-color: white;    
 }
@@ -24,12 +25,17 @@ body.quiSommesNous {
     left: -50%;	
 }
 
+.adhesion-body,
 .quiSommesNous-body {    
     padding: 20px 10px;
     max-width: 40em;
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.quiSommesNous-objectif a {
+    color: #0095E5;
 }
 
 .quiSommesNous-presentation {
@@ -74,8 +80,12 @@ body.quiSommesNous {
 .imageAvatar-07 {
     background-position: -336px 0;
 }
-.Membre-association {
-    
+.MembreAssociation {
+    margin-top: 10px;
+}
+
+.MembreAssociation:last-child {
+    margin-top: 15px;
 }
 
 .MembreAssociation-titre {
@@ -98,17 +108,35 @@ body.quiSommesNous {
 
 .btn-adhesion {
     padding: 10px;
-    border: 1px solid transparent;
-    background-color: hsl(201, 100%, 45%);
-    color: hsl(0, 0%, 100%);
-    width: 250px;
-    border-radius: 3px;
+    border: 2px solid HSL(201, 100%, 45%);;
+    background-color: transparent;
+    color: HSL(201, 100%, 45%);;
+    display: block;
+    margin: 0 auto;
+    transition: background-color .2s, color .2s;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+.btn-adhesion:hover {
+    background-color: HSL(201, 100%, 45%);
+    color: white;
 }
 
 .avatar-presidente {
     
 }
 
+.quiSommesNous-objectif {
+    margin-bottom: 20px;
+}
+
+.quiSommesNous-objectif--titre {
+}
+
+.quiSommesNous-objectif--description {
+}
+    
 .quiSommesNous-logo-apropos {
     background: url(../assets/images/logo-apropos-112.png) no-repeat;
     position: absolute;
