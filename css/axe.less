@@ -2,6 +2,12 @@ axe{
     position:relative;
 }
 
+.axePrevention,
+.axeRecherche,
+.axeFormation {
+    position: relative;
+}
+
 .axePrevention {
     background-color: @color-prevention;
     border-bottom: solid 1px @color-prevention-dark;    
@@ -22,10 +28,10 @@ axe{
     border-bottom: solid 1px @color-bodyHeader-dark;
 }
 
-.prevention.post .axePrevention,
-.recherche.post .axeRecherche,
-.formation.post .axeFormation {
-    margin: 0;    
+.prevention .axePrevention,
+.recherche .axeRecherche,
+.formation .axeFormation {
+    padding-bottom: 5px;    
 }
 
 .body-header,
@@ -33,14 +39,16 @@ axe{
 .axeRecherche,
 .axeFormation{
     color: white;
-    padding: 25px;
+    padding: 0 25px;
     vertical-align: top;
     cursor: pointer;
 }
 
+
 .axePrevention-detail,
 .axeRecherche-detail,
 .axeFormation-detail{
+    display: none;
     text-align: left;
     margin-top: 20px;
 }
@@ -84,13 +92,8 @@ axe{
 }
 
 .axePrevention-titre,
-.axeRecherche-titre {
-    margin-left: -20px;
-}
-
-.axePrevention-titre,
 .axeRecherche-titre,
-.axeFormation-titre{
+.axeFormation-titre{    
     display: none;
 }
 
@@ -100,4 +103,6 @@ axe{
     font-size: 30px;
     font-variant: small-caps;
     display: inline-block;
+    position: absolute;
+    margin-top: 20px;
 }

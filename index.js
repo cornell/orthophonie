@@ -89,18 +89,15 @@ Handlebars.registerHelper('isSalarie', function (options) {
 
 metalsmith(__dirname)
     .use(filter([
-        'content/**/*.md', 
-        'css/*.css', 
+        'content/**/*.md',
+        'css/*.css',
         'font/*.*',
-        'js/*.js'
+        'js/*.js',
+        'assets/documents/reglement-interieur-formation-apropos.pdf'
     ]))
     .use(collections({
         pages: {
             pattern: 'content/pages/*.md'
-        },
-        posts: {
-            pattern: 'content/posts/*.md',
-            reverse: true
         },
         prevention: {
             pattern: 'content/prevention/*.md',
@@ -115,6 +112,24 @@ metalsmith(__dirname)
             reverse: true
         }
     }))
+    .use(function (files, metalsmith, done) {
+        
+        var collections = metalsmith._metadata.collections
+        var posts = collections.formation.concat(collections.prevention);
+        posts = posts.concat(collections.recherche);
+
+        collections.posts = posts.sort(function (a, b) {
+
+            if (a.date < b.date) {
+                return 1;
+            }
+            if (a.date > b.date) {
+                return -1;
+            }
+            return 0;
+        });
+        done();
+    })
     .use(markdown())
     .use(excerpts())
     .use(myPlugin())
@@ -141,5 +156,5 @@ metalsmith(__dirname)
     .build(function (err) {
         if (err) throw err;
         
-         //createPdf();
+        //createPdf();
     });

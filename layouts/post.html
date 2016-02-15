@@ -9,5 +9,12 @@
         {{> articleInfo}}
         {{&contents}}   
         {{>inscriptionTarif}}
-        </article>
+        <h2>Documents annexes</h2>
+        {{#isAxeFormation}}
+        <p>
+        <a href="../../assets/documents/reglement-interieur-formation-apropos.pdf"><span class="icon-pdf"></span><span class="pdf-descriptionFichier">réglement intérieur formation "a propos"</span></a>
+        <div class="pdf-nomFichier">reglement-interieur-formation-apropos.pdf</div>
+        </p>
+        {{/isAxeFormation}} 
+    </article>
     {{>footer}}
