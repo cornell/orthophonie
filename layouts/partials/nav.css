@@ -1,78 +1,3 @@
-/*.nav {
-	background-color: white;
-	border-bottom: solid 1px @color-article-border;
-	line-height: 2.5rem;
-	color: @color-article-border;
-}
-
-.nav--hidden {
-	position: absolute;
-	width: 100%;	
-	top: -300px;
-}
-
-
-.nav-accueil {
-    margin-left: 100px;
-}
-
-.nav-accueil,
-.nav-quiSommesNous {
-	border-bottom: 3px solid white;
-	transition: color 300ms ease-in-out 0s;
-}
-
-.nav-accueil:hover,
-.nav-accueil--active,
-.nav-contact:hover,
-.nav-contact--active,
-.nav-quiSommesNous:hover,
-.nav-quiSommesNous--active {
-	border-bottom: solid 3px @color-font-primary;
-	color: @color-font-primary;	
-}
-
-.nav-prevention {
-	border-bottom: 3px solid white;
-	transition: color 300ms ease-in-out 0s;
-	
-}
-
-.nav-prevention:hover,
-.nav-prevention--active {
-	border-bottom: solid 3px @color-prevention;
-	color: @color-font-primary;	
-}
-
-.nav-recherche {
-	border-bottom: 3px solid white;
-	transition: color 300ms ease-in-out 0s;
-}
-
-.nav-recherche:hover,
-.nav-recherche--active {
-	border-bottom: solid 3px @color-recherche;
-	color: @color-font-primary;	
-}
-
-.nav-formation {
-	border-bottom: 3px solid white;
-	transition: color 300ms ease-in-out 0s;
-}
-
-.nav-formation:hover,
-.nav-formation--active {
-	border-bottom: solid 3px @color-formation;
-	color: @color-font-primary;	
-}
-
-.logo-apropos {
-    background: url(../assets/images/logo-apropos-56.png) no-repeat;
-    position: absolute;
-    margin-left: 25px;
-}
-*/
-/* -------------------------------------------------- */
 html, body {
     font-family: verdana;
     font-size: 16px;
@@ -194,7 +119,7 @@ a {
 @media only screen and (min-width: 515px) {
  
     .header{
-        /*position: fixed;*/
+        position: fixed;
     }
 
     .site-content {
