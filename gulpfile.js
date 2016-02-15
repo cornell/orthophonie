@@ -25,11 +25,12 @@ gulp.task('copy', function(){
 		.pipe(gulp.dest('src/content/posts'));
 });
 
-gulp.task('default', ['copy'], function(){
+gulp.task('default', function(){
 	
 	var assets = useref.assets();
 	
-	del('src/css');	
+	del('src/css');
+    del(['src/markdownForPdf/**/', '!src/markdownForPdf']);		
 	
 	return gulp.src('layouts/partials/header.html')			
 		.pipe(assets) // intègre les fichiers définis dans les blocs html dans le pipe
@@ -63,14 +64,19 @@ gulp.task('mv', function(){
     gulp.src(['dist/pages/adhesion/index.html'])
 		.pipe(gulp.dest('dist/adhesion'));		        
 	gulp.src(['dist/pages/qui-sommes-nous/index.html'])
-		.pipe(gulp.dest('dist/qui-sommes-nous'));				
+		.pipe(gulp.dest('dist/qui-sommes-nous'));
+    gulp.src(['dist-pdf/markdownForPdf/**/*.html'])
+        .pipe(html2pdf())
+		.pipe(gulp.dest('dist/formation'));                
 });
 
-gulp.task('mv-clean', ['mv'], function(){
+gulp.task('clean', function(){
 	
-	del('dist/pages');
-	/*del('src/css');
-	del('dist/css');*/
+	del([
+        'dist/pages',
+        'dist-pdf',
+        'src/content/posts/**',
+        '!src/content/posts']);
 });
 
 gulp.task('replace', function(){
@@ -145,17 +151,4 @@ gulp.task('replace', function(){
 		.pipe(replace('href="/pages/index', 'href="../index.html'))
 		.pipe(replace('href="/pages/', 'href="../'))
 		.pipe(gulp.dest('dist/qui-sommes-nous'));						
-});
-
-// gulp.task('', function(){
-//   
-//   'contrat-formation-dpc-hors-dpc.md'
-//   'contrat-formation-salarie.md'  
-// })
-
-gulp.task('pdf', function () {
-    return gulp
-        .src('./src/content/documents/*.html')
-        .pipe(html2pdf())
-        .pipe(gulp.dest('./src/content/documents'));
 });

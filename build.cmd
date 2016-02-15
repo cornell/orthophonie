@@ -1,1 +1,1 @@
-gulp & node index & gulp mv-clean & gulp replace
+gulp copy & gulp & node index & node index2 & gulp mv & gulp replace & gulp clean

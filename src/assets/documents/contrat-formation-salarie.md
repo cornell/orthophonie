@@ -14,8 +14,8 @@ Entre les soussignés :
 L'organisme de formation : A PROPOS 
 Représenté par Hélène Le Roux -­‐ Présidente 
 Et l’employeur (désignation de l’établissement et adresse du siège social, n° SIRET) désigné ci-­‐après : 
-{{employeur-nom}} {{employeur-adresse}} 
-représenté par {{employeur-representant}}. (Indiquer le nom du représentant légal, signataire de la convention) 
+(Nom employeur, adresse): __________________________________________________________________________ 
+représenté par (représentant de l'employeur). (Indiquer le nom du représentant légal, signataire de la convention) 
 Est conclue la convention suivante, en application des dispositions de la sixième partie du Code du Travail portant organisation de la formation professionnelle tout au long de la vie. 
 L’action de formation se définit comme une ou plusieurs journées consécutives de formation. Les durées et dates de l’action de formation sont précisées respectivement aux articles 2 et 5 du présent contrat. 
 
