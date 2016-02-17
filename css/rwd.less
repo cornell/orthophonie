@@ -1,5 +1,9 @@
-@media screen and (min-width: 510px) {
-     
+@media only screen and (min-width: 510px) {
+
+    .site-content {
+        padding-top: 66px;
+    }
+        
     .body-header,
     .axePrevention,
     .axeRecherche,
@@ -12,6 +16,12 @@
      .axeFormation-detail {
          display: block;
      }
+     
+     .axePrevention-image, 
+     .axeRecherche-image, 
+     .axeFormation-image {
+        height: 60px;
+    }
        
     .footer {
 	   height: 95px !important; /* change to .articleDetail */
@@ -38,12 +48,31 @@
 }
 
 @media screen and (min-width: 800px) {
+
+    .header__icon,
+    .header__logo {
+        display: none;
+    }
+    
+    .menu {
+        position: static;
+        transform: none;
+        width: auto;  
+        background-color: inherit; 
+        transition-duration: initial;    
+    }
 	
     .body-header,
     .axePrevention,
     .axeRecherche,
     .axeFormation{
         padding: 25px;
+    }
+    
+    .axePrevention-image, 
+    .axeRecherche-image, 
+    .axeFormation-image {
+        height: 70px;
     }
     	
 	.nav {
