@@ -73,21 +73,18 @@
 }
 
 /* -------------------------------------------------- */
-/*
-html, body {
-    font-family: verdana;
-    font-size: 16px;
-    line-height: 1.4;
-    height: 100%;
-    
-    margin: 0;
-    padding: 0;
-}
+// html, body {
+//     font-size: 16px;
+//     line-height: 1.4;
+//     height: 100%;    
+//     margin: 0;
+//     padding: 0;
+// }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+// a {
+//     text-decoration: none;
+//     color: inherit;
+// }
 
 .site-container, .pusher {
     height: 100%;
@@ -104,35 +101,33 @@ a {
     right: 0;
     height: 66px;
     line-height: 66px;
-    color: #FFF;
-    background-color: hsl(177, 70%, 41%);
+    background-color: #FFF;
 }
 
 .header__logo {
-    font-weight: bold;
     padding-right: 25px;
     float: left;
 }
 
 .site-content {
-    position: absolute;
-    top: 66px;
     left: 0;
     right: 0;
     bottom: 0;
     padding-top: 0;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; /* safari */
 }
 
 .menu {
+    /*float: left;*/
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     width: 180px;
-    background-color: hsl(177, 70%, 36%);
+    // background-color: hsl(177, 70%, 36%);
+    /*display: none;*/    
     transform: translateX(-180px);
+    /*transition-duration: .3s;*/
 }
 
 .width-sidebar .pusher {
@@ -147,20 +142,21 @@ a {
     bottom: 0;
     background-color: rgba(0,0,0,0.6);
 }
-
+/*
 .menu a {
     padding: 0 10px;
     display: block;
     height: 40px;
     line-height: 40px;
-    border-bottom: 1px solid hsl(177, 70%, 41%);
-}
+     border-bottom: 1px solid hsl(177, 70%, 41%);
+}*/
 
-.menu a:hover {
-    color: hsl(177, 70%, 51%)
-}
+// .menu a:hover {
+//     color: hsl(177, 70%, 51%)
+// }
 
 .container {
+    /*clear: both;*/
     margin: 0 10px;
 }
 
@@ -170,6 +166,7 @@ a {
     float: left;
     width: 51px;
     height: 66px;
+    /*background-color: hsla(0, 0%, 100%, .5);*/
     
     cursor: pointer;
 }
@@ -182,13 +179,14 @@ a {
     height: 0;
     top: 26px;
     left: 15px;
-    box-shadow: 0 0 0 1px #FFF, 0 7px 0 1px #FFF, 0 14px 0 1px #FFF;
+    box-shadow: 0 0 0 1px #000, 0 7px 0 1px #000, 0 14px 0 1px #000;
 }
 
 @media only screen and (min-width: 515px) {
  
-    .header{
-        position: fixed;
+    .header__icon,
+    .header__logo {
+        display: none;
     }
 
     .site-content {
@@ -203,9 +201,8 @@ a {
         transition-duration: initial;    
     }
     
-    .menu a {
-        display: inline-block;
-        border-bottom: none;
-    }   
+    // .menu a {
+    //     display: inline-block;
+    //     border-bottom: none;
+    // }   
 }
-*/
