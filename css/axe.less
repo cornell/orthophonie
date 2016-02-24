@@ -2,17 +2,9 @@ axe{
     position:relative;
 }
 
-// .axePrevention,
-// .axeRecherche,
-// .axeFormation {
-//     position: relative;
-//     padding: 10px 25px;
-
-// }
-
 .axePrevention {
     background-color: @color-prevention;
-    border-bottom: solid 1px @color-prevention-dark;    
+    border-bottom: solid 1px @color-prevention-dark;  
 }
 
 .axeRecherche {
@@ -30,11 +22,11 @@ axe{
     border-bottom: solid 1px @color-bodyHeader-dark;
 }
 
-// .prevention .axePrevention,
-// .recherche .axeRecherche,
-// .formation .axeFormation {
-//     padding-bottom: 5px;    
-// }
+.post .axePrevention,
+.post .axeRecherche,
+.post .axeFormation {
+    margin: 0;
+}
 
 .body-header,
 .axePrevention,
@@ -44,6 +36,13 @@ axe{
     padding: 10px 25px;
     // vertical-align: top;
     cursor: pointer;
+    position: relative;
+}
+
+.axePrevention-image,
+.axeRecherche-image,
+.axeFormation-image {
+    // position: absolute;    
 }
 
 
@@ -52,7 +51,7 @@ axe{
 .axeFormation-detail{
     display: none;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .axePrevention-detail {
@@ -96,15 +95,63 @@ axe{
 .axePrevention-titre,
 .axeRecherche-titre,
 .axeFormation-titre{    
-    display: none;
+    font-variant: small-caps;
+    display: inline-block;
+    font-size: 30px;
 }
 
 .accueil .axePrevention-titre,
 .accueil .axeRecherche-titre,
 .accueil .axeFormation-titre{
-    font-size: 30px;
-    font-variant: small-caps;
+    // font-variant: small-caps;
     display: inline-block;
-    position: absolute;
-    margin-top: 20px;
+    // position: absolute;
+    // margin-top: 20px;
+}
+
+@media only screen and (min-width: 510px) {
+    
+    .axePrevention-detail,
+    .axeRecherche-detail,
+    .axeFormation-detail {
+        display: block;
+        margin-left: 65px;
+    }     
+
+    .axePrevention-image, 
+    .axeRecherche-image, 
+    .axeFormation-image {
+        height: 60px;
+    }
+}
+
+
+@media only screen and (min-width: 860px) {
+    
+    .axePrevention-titre,
+    .axeRecherche-titre,
+    .axeFormation-titre{    
+        display: none;
+    }
+    
+    .axePrevention-image,
+    .axeRecherche-image,
+    .axeFormation-image {
+        position: static;    
+        height: 70px;
+    }
+    
+    .body-header,
+    .axePrevention,
+    .axeRecherche,
+    .axeFormation{
+        padding: 25px;
+    }
+    
+    .axePrevention-detail,
+    .axeRecherche-detail,
+    .axeFormation-detail {
+        //  display: block;
+         margin-left: auto;
+     }    
 }
