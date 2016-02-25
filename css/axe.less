@@ -77,7 +77,6 @@ axe{
     fill: @color-prevention-dark;    
 }
 
-
 .axeRecherche-image {
     fill: @color-recherche-dark;
 }
@@ -96,50 +95,75 @@ axe{
 .axeRecherche-titre,
 .axeFormation-titre{    
     font-variant: small-caps;
-    display: inline-block;
+    display: block;
     font-size: 30px;
 }
 
 .accueil .axePrevention-titre,
 .accueil .axeRecherche-titre,
 .accueil .axeFormation-titre{
-    // font-variant: small-caps;
-    display: inline-block;
-    // position: absolute;
-    // margin-top: 20px;
+    display: block;
+}
+
+
+.axePrevention-titre,
+.axeRecherche-titre,
+.axeFormation-titre{    
+    display: none;
 }
 
 @media only screen and (min-width: 510px) {
     
+       
     .axePrevention-detail,
     .axeRecherche-detail,
     .axeFormation-detail {
-        display: block;
+        display: inline-block;
         margin-left: 65px;
+        min-height: 49px;
     }     
 
     .axePrevention-image, 
     .axeRecherche-image, 
     .axeFormation-image {
+        position: absolute;
         height: 60px;
+        top: 40px;
     }
 }
 
 
 @media only screen and (min-width: 860px) {
-    
+       
+       
+    .accueil .axePrevention-titre,
+    .accueil .axeRecherche-titre,
+    .accueil .axeFormation-titre{
+        display: inline-block;
+    }
+
     .axePrevention-titre,
     .axeRecherche-titre,
     .axeFormation-titre{    
-        display: none;
-    }
+        display: inline-block;
+    }    
     
     .axePrevention-image,
     .axeRecherche-image,
     .axeFormation-image {
         position: static;    
         height: 70px;
+        top: auto;
+        //display: block;
     }
+    
+    axePrevention-detail,
+    .axeRecherche-detail,
+    .axeFormation-detail {
+        display: block;
+        margin-left: 0;
+        min-height: 0;
+    }     
     
     .body-header,
     .axePrevention,
