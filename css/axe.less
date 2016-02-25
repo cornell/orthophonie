@@ -33,25 +33,17 @@ axe{
 .axeRecherche,
 .axeFormation{
     color: white;
-    padding: 10px 25px;
-    // vertical-align: top;
+    padding: 10px;
     cursor: pointer;
     position: relative;
 }
 
-.axePrevention-image,
-.axeRecherche-image,
-.axeFormation-image {
-    // position: absolute;    
-}
-
-
 .axePrevention-detail,
 .axeRecherche-detail,
 .axeFormation-detail{
-    display: none;
     text-align: left;
     margin-top: 10px;
+    display: none;
 }
 
 .axePrevention-detail {
@@ -69,8 +61,13 @@ axe{
 .prevention .axePrevention-detail,
 .recherche .axeRecherche-detail,
 .formation .axeFormation-detail {
-    width: 81%;
-    display: inline-block;
+    display: block;
+} 
+
+.prevention .axePrevention-image,
+.recherche .axeRecherche-image,
+.formation .axeFormation-image {
+    display: none;
 } 
 
 .axePrevention-image {
@@ -88,48 +85,79 @@ axe{
 .axePrevention-image,
 .axeRecherche-image,
 .axeFormation-image {
+    position: static;
+    display: inline-block;
     height: 50px;
+    width: 50px;
+    top: 10px;
+    margin-left: 35px;
 }
 
 .axePrevention-titre,
 .axeRecherche-titre,
 .axeFormation-titre{    
     font-variant: small-caps;
-    display: block;
-    font-size: 30px;
+    display: inline-block;
+    font-size: 23px;
 }
 
 .accueil .axePrevention-titre,
 .accueil .axeRecherche-titre,
 .accueil .axeFormation-titre{
-    display: block;
+    display: inline-block;
+    margin-left: 20px;
 }
-
 
 .axePrevention-titre,
 .axeRecherche-titre,
-.axeFormation-titre{    
-    display: none;
+.axeFormation-titre,
+.axePrevention-image,
+.axeRecherche-image,
+.axeFormation-image {
+    vertical-align: middle;
 }
 
 @media only screen and (min-width: 510px) {
+       
+    .accueil .axePrevention-titre,
+    .accueil .axeRecherche-titre,
+    .accueil .axeFormation-titre{
+        margin-left: 65px;
+    }
+          
+    .axePrevention-titre,
+    .axeRecherche-titre,
+    .axeFormation-titre{    
+        display: block;
+        margin-left: 65px;
+        font-size: 30px;
+    }
     
+    .axeFormation {
+        min-height: 88px;
+    }       
        
     .axePrevention-detail,
     .axeRecherche-detail,
     .axeFormation-detail {
-        display: inline-block;
+        display: block;
         margin-left: 65px;
-        min-height: 49px;
     }     
 
     .axePrevention-image, 
     .axeRecherche-image, 
     .axeFormation-image {
         position: absolute;
+        display: block;
         height: 60px;
-        top: 40px;
+        margin-left: 0;
     }
+    
+    .prevention .axePrevention-image,
+    .recherche .axeRecherche-image,
+    .formation .axeFormation-image {
+        display: block;
+    } 
 }
 
 
@@ -140,24 +168,46 @@ axe{
     .accueil .axeRecherche-titre,
     .accueil .axeFormation-titre{
         display: inline-block;
+        margin-left: 0;
+    }
+
+    .accueil .axePrevention-detail,
+    .accueil .axeRecherche-detail,
+    .accueil .axeFormation-detail {
+        margin-left: auto;
     }
 
     .axePrevention-titre,
     .axeRecherche-titre,
     .axeFormation-titre{    
         display: inline-block;
-    }    
+        // margin-left: 0;
+        text-align: left;
+    }             
+    
+    .axePrevention,
+    .axeRecherche,
+    .axeFormation{
+        padding: 25px 10px;
+    }        
     
     .axePrevention-image,
     .axeRecherche-image,
     .axeFormation-image {
         position: static;    
         height: 70px;
+        width: auto;
         top: auto;
-        //display: block;
+        display: inline-block;
     }
     
-    axePrevention-detail,
+    .prevention .axePrevention-image,
+    .recherche .axeRecherche-image,
+    .formation .axeFormation-image {
+        position: absolute;    
+    } 
+    
+    .axePrevention-detail,
     .axeRecherche-detail,
     .axeFormation-detail {
         display: block;
@@ -176,6 +226,6 @@ axe{
     .axeRecherche-detail,
     .axeFormation-detail {
         //  display: block;
-         margin-left: auto;
+         margin-left: 65px;
      }    
 }
