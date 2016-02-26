@@ -11,10 +11,34 @@
 	top: -300px;
 }
 
+.nav-accueil > div,
+.nav-quiSommesNous > div,
+.nav-prevention > div,
+.nav-recherche > div,
+.nav-formation > div {
+    padding-left: 20px;  
+}
 
-// .nav-accueil {
-//     margin-left: 100px;
-// }
+.nav-accueil--active > div,
+.nav-quiSommesNous--active > div {
+    border-right: 4px solid @color-font-primary;
+    background-color: @color-bgc-button;
+}
+
+.nav-prevention--active > div {
+    border-right: 4px solid @color-prevention;
+    background-color: @color-bgc-button;
+}
+
+.nav-formation--active > div {
+    border-right: 4px solid @color-formation;
+    background-color: @color-bgc-button;
+}
+
+.nav-recherche--active > div {
+    border-right: 4px solid @color-recherche;
+    background-color: @color-bgc-button;
+}
 
 .nav-logo {
     position: relative;
@@ -78,18 +102,6 @@
 }
 
 /* -------------------------------------------------- */
-// html, body {
-//     font-size: 16px;
-//     line-height: 1.4;
-//     height: 100%;    
-//     margin: 0;
-//     padding: 0;
-// }
-
-// a {
-//     text-decoration: none;
-//     color: inherit;
-// }
 
 .site-container, .pusher {
     height: 100%;
@@ -144,16 +156,12 @@
 }
 
 .menu {
-    /*float: left;*/
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     width: 180px;
-    // background-color: hsl(177, 70%, 36%);
-    /*display: none;*/    
     transform: translateX(-180px);
-    /*transition-duration: .3s;*/
 }
 
 .width-sidebar .pusher {
@@ -168,20 +176,48 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.6);
 }
-/*
-.menu a {
-    padding: 0 10px;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-     border-bottom: 1px solid hsl(177, 70%, 41%);
-}*/
-
-// .menu a:hover {
-//     color: hsl(177, 70%, 51%)
-// }
 
 .container {
-    /*clear: both;*/
     margin: 0 10px;
+}
+
+@media only screen and (min-width: 860px) {
+    
+    .nav {
+		text-align: center;
+        height: 3.5rem;
+		line-height: 3.5rem;
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.nav-item {
+		flex: 0 0 auto;
+		width: 16.666%;   
+        padding-left: 0;  
+	}
+    
+    .nav-item > div {    
+        // border-right: 4px solid rgb(106, 169, 79);
+        // background-color: rgb(239, 239, 239) none repeat scroll 0% 0%;
+        border-right: none;
+        background: medium none currentColor;    
+        // padding-left: 0;  
+    }
+    
+    .nav-accueil > div,
+    .nav-quiSommesNous > div,
+    .nav-prevention > div,
+    .nav-recherche > div,
+    .nav-formation > div {
+        padding-left: 0;  
+    }
+    
+    .nav-accueil--active > div,
+    .nav-quiSommesNous--active > div,
+    .nav-prevention--active > div,
+    .nav-formation--active > div,
+    .nav-recherche--active > div {
+        background-color: transparent;
+    }    
 }

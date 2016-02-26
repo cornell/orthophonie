@@ -13,4 +13,11 @@
         document.querySelector('body')
             .classList.remove('width-sidebar');        
     })
+    
+    el = document.querySelector('.nav');
+    el.addEventListener('click', function(e){
+        //e.preventDefault();
+        document.querySelector('body')
+            .classList.remove('width-sidebar');        
+    })
 })();
