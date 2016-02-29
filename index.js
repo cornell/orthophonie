@@ -93,7 +93,8 @@ metalsmith(__dirname)
         'css/*.css',
         'font/*.*',
         'js/*.js',
-        'assets/documents/reglement-interieur-formation-apropos.pdf'
+        'assets/documents/reglement-interieur-formation-apropos.pdf',
+        'assets/documents/bulletin-adhesion-2015.pdf'
     ]))
     .use(collections({
         pages: {

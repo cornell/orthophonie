@@ -8,9 +8,11 @@ body.quiSommesNous {
 }
 
 .quiSommesNous-header {
-    font-size: .95em;
+    font-size: .92em;
     padding: 20px 0;
     margin: 0 auto;
+    text-align: center;
+    max-width: 380px;
 }
 
 .adhesion-body,
@@ -88,13 +90,30 @@ body.quiSommesNous {
     margin-top: 20px;
 }
 
-.MembreAssociation-contenu {
+.MembreAssociation-description {
     display: inline-block;
     width: 78%;
 }
 
+.MembreAssociation-description > p{
+    margin: 0;
+}
+
 .MembreAssociation-nomComplet {
     font-size: .9em;
+}
+
+.MembreAssociation-adresse {
+    font-size: .9em;
+    display: inline-block;
+    margin-left: 10px;
+    color: @color-font-secondary;
+}
+
+.MembreAssociation-annee {
+    display: inline-block;
+    margin-left: 10px;
+    color: @color-font-secondary;
 }
 
 // bug on menu if activate
@@ -132,6 +151,13 @@ body.quiSommesNous {
 
 .quiSommesNous-objectif--description {
 }
+
+@media only screen and (min-width: 510px) {
+    
+    // .quiSommesNous-header {
+    //     max-width: 390px;
+    // }    
+}
     
 @media only screen and (min-width: 860px){
     
@@ -147,4 +173,8 @@ body.quiSommesNous {
         float: left;
         margin-left: 20px;
     }
+    
+    .quiSommesNous-header {
+        max-width: 465px;
+    }    
 }

@@ -64,8 +64,7 @@ duree: une demi­‐journée en non présentiel (questionnaire en ligne) et 2 jo
     - Les troubles associés aux fentes : dysoralité, troubles orthodontiques, mais aussi schéma
     corporel et estime de soi
 3. intervention de l'orthophoniste avant 3 / 4 ans [ 16h00 - 17h00 ]
-    - Intérêt  et contenu d'une guidance parentale : l'enfant né avec une fente est un
-    enfant comme les autres, ou presque : prévention de la dysoralité, évaluation des pré-requis et dépistage des troubles liés à l'IVP et à la division palatine
+    - Intérêt  et contenu d'une guidance parentale : l'enfant né avec une fente est un enfant comme les autres, ou presque : prévention de la dysoralité, évaluation des pré-requis et dépistage des troubles liés à l'IVP et à la division palatine
     - Quand et quelle éducation précoce ?
 
 ### Journée 2

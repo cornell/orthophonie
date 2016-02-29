@@ -1,8 +1,7 @@
 <div class="{{#isAxePrevention}}article-prevention{{/isAxePrevention}}{{#isAxeFormation}}article-formation{{/isAxeFormation}}{{#isAxeRecherche}}article-recherche{{/isAxeRecherche}} articleResume {{#isAxePrevention}}articleResume-prevention{{/isAxePrevention}}{{#isAxeFormation}}articleResume-formation{{/isAxeFormation}}{{#isAxeRecherche}}articleResume-recherche{{/isAxeRecherche}}">
     {{> articleInfo}}
-    <div class="articleResume-contenu">
+    <div class="articleResume-contenu clearfix">
         {{&excerpt}}<span> ...</span>
         <a class="readMore u-floatRight" href="/{{path}}">Lire la suite</a>
     </div>
-    <div class="clear"></div>
 </div>
