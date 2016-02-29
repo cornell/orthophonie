@@ -210,11 +210,25 @@ axe{
         display: inline-block;
     }
     
+    .prevention .axePrevention,
+    .recherche .axeRecherche,
+    .formation .axeFormation {
+        margin: 20px 20px 0;
+        cursor: default;
+        pointer-events: none;    
+    }    	
+	
+	.prevention .axePrevention-detail,
+	.recherche .axeRecherche-detail,
+	.formation .axeFormation-detail {
+		max-width: 25em;
+	}    
+    
     .prevention .axePrevention-image,
     .recherche .axeRecherche-image,
     .formation .axeFormation-image {
         position: absolute;    
-    } 
+    }         
     
     .axePrevention-detail,
     .axeRecherche-detail,
