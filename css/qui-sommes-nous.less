@@ -101,13 +101,18 @@ body.quiSommesNous {
 
 .MembreAssociation-nomComplet {
     font-size: .9em;
+    line-height: 0;
 }
 
 .MembreAssociation-adresse {
     font-size: .9em;
     display: inline-block;
-    margin-left: 10px;
     color: @color-font-secondary;
+}
+
+.MembreAssociation-adresse > span:not(:first-child):not(:last-child) {
+    margin: 0 10px;
+    display: inline-block;
 }
 
 .MembreAssociation-annee {
