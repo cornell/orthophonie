@@ -89,7 +89,10 @@ Handlebars.registerHelper('isSalarie', function (options) {
 
 metalsmith(__dirname)
     .use(filter([
-        'content/**/*.md',
+        'content/pages/*.md',
+        'content/prevention/*.md',
+        'content/formation/*.md',
+        'content/recherche/*.md',
         'css/*.css',
         'font/*.*',
         'js/*.js',

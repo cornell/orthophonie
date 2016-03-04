@@ -62,12 +62,15 @@ gulp.task('mv', function () {
     gulp.src(['dist/pages/adhesion/index.html'])
         .pipe(gulp.dest('dist/adhesion'));
     gulp.src(['dist/pages/qui-sommes-nous/index.html'])
-        .pipe(gulp.dest('dist/qui-sommes-nous'));
-        
+        .pipe(gulp.dest('dist/qui-sommes-nous'));        
+});
+
+gulp.task('htmlToPdf', function(){
+   
     // création des contrats de formation en PDF
     gulp.src(['dist-pdf/markdownForPdf/**/*.html'])
         .pipe(html2pdf())
-        .pipe(gulp.dest('dist/formation'));
+        .pipe(gulp.dest('dist/formation'));    
 });
 
 gulp.task('clean', function () {
