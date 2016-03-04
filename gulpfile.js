@@ -9,7 +9,8 @@ var gulpif = require('gulp-if');
 var useref = require('gulp-useref');
 var minifyCss = require('gulp-minify-css');
 var less = require('gulp-less');
-var html2pdf = require('gulp-html2pdf');
+//var html2pdf = require('gulp-html2pdf');
+var wkhtmltopdf = require('wkhtmltopdf');
 // uglify = require('gulp-uglify'),
 
 
@@ -69,9 +70,34 @@ gulp.task('htmlToPdf', function(){
    
     // création des contrats de formation en PDF
     gulp.src(['dist-pdf/markdownForPdf/**/*.html'])
-        .pipe(html2pdf())
+        .pipe(plugin)
         .pipe(gulp.dest('dist/formation'));    
 });
+
+
+function plugin(options) {
+    options = options || {};
+
+    return function (files, metalsmith, done) {
+        setImmediate(done);
+        
+        
+    //     Object.keys(files).forEach(function (file) {
+    //         
+    //         console.log(file);
+    //         // debug('checking file: %s', file);
+    //         //   if (!markdown(file)) return;
+    //         // if (file !== '') return;
+    //         
+    //         // var fileObj = path.parse(file)
+    //         // var fileData = files[file];
+    //         // // récupérer que les fichiers de type formation
+    //         // if (fileData.axe !== 'formation') return;
+    //         //  console.log(fileData);
+    // 
+    //     });
+    };
+}
 
 gulp.task('clean', function () {
 
