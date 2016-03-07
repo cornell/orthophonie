@@ -1,6 +1,6 @@
 (function(){
     
-    var el = document.querySelector('.header__icon');
+    var el = document.querySelector('.header__menu');
     el.addEventListener('click', function(e){
         e.preventDefault();
         var elMenu = document.querySelector('body');

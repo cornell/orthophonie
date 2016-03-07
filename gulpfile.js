@@ -9,7 +9,7 @@ var gulpif = require('gulp-if');
 var useref = require('gulp-useref');
 var minifyCss = require('gulp-minify-css');
 var less = require('gulp-less');
-//var html2pdf = require('gulp-html2pdf');
+var html2pdf = require('gulp-html2pdf');
 var wkhtmltopdf = require('wkhtmltopdf');
 // uglify = require('gulp-uglify'),
 
@@ -66,12 +66,14 @@ gulp.task('mv', function () {
         .pipe(gulp.dest('dist/qui-sommes-nous'));        
 });
 
-gulp.task('htmlToPdf', function(){
+gulp.task('html2pdf', function(){
    
     // création des contrats de formation en PDF
     gulp.src(['dist-pdf/markdownForPdf/**/*.html'])
-        .pipe(plugin)
-        .pipe(gulp.dest('dist/formation'));    
+        //.pipe(html2pdf())
+        .pipe(gulp.dest('dist/formation'));
+    
+    // wkhtmltopdf("C:\Projets\orthophonie\dist-pdf\markdownForPdf\le-bilan-et-la-reeducation-vocale-le-timbre-en-question\contrat-formation-dpc.html")
 });
 
 
@@ -103,7 +105,7 @@ gulp.task('clean', function () {
 
     del([
         'dist/pages',
-        'dist-pdf',
+        //'dist-pdf',
         // 'src/content/posts/**',
         // '!src/content/posts'
         ]);
