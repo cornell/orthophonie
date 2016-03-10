@@ -9,8 +9,10 @@ var gulpif = require('gulp-if');
 var useref = require('gulp-useref');
 var minifyCss = require('gulp-minify-css');
 var less = require('gulp-less');
+var autoprefixer  = require("gulp-autoprefixer");
 var html2pdf = require('gulp-html2pdf');
 var wkhtmltopdf = require('wkhtmltopdf');
+var debug = require('gulp-debug');
 // uglify = require('gulp-uglify'),
 
 
@@ -28,21 +30,23 @@ var wkhtmltopdf = require('wkhtmltopdf');
 
 gulp.task('default', function () {
 
-    var assets = useref.assets();
+    // var assets = useref.assets();
 
     del('src/css');
     del(['src/markdownForPdf/**/', '!src/markdownForPdf']);
 
-    return gulp.src('layouts/partials/header.html')
-        .pipe(assets) // intègre les fichiers définis dans les blocs html dans le pipe
-        .pipe(less({
-            strictMath: true
-        }))
-    //.pipe(gulpif('*.css', minifyCss()))
-        .pipe(rev())                // Rename the concatenated files
-        .pipe(assets.restore())
+    return gulp.src('layouts/partials/header.html')        
         .pipe(useref())
-        .pipe(revReplace())         // Substitute in new filenames
+        .pipe(debug({title: 'useref:'}))
+        .pipe(gulpif('*.css',less({ 
+                strictMath: true 
+        })))
+        .pipe(gulpif('*.css', autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        })))
+        .pipe(gulpif('*.css', rev()))
+        .pipe(revReplace())
         .pipe(gulpif('*.html', rename('header.concat.html')))
         .pipe(gulp.dest('layouts/partials'));
 
