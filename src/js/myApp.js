@@ -26,17 +26,4 @@
 		el = document.querySelector('.nav-quiSommesNous');
 		el.classList.add('nav-quiSommesNous--active');
 	}
-	
-	// document.querySelector('.navIcon').addEventListener('click', function(e){
-		
-	// 	el = document.querySelector('.nav');
-	// 	el.classList.toggle('nav--hidden');
-	// 	el.classList.toggle('nav--block');
-		
-	// 	el = document.querySelector('.navIcon');
-	// 	el.classList.toggle('is-opened');
-		
-	// 	// el = document.querySelector('.navIcon-container');
-	// 	// el.classList.toggle('navIcon-container--hide');
-	// });
 })();
