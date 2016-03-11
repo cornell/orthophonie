@@ -1,3 +1,1 @@
- gulp mv &
- gulp replace & 
- gulp clean
+ gulp mv & gulp replace & gulp clean

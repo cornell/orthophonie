@@ -23,7 +23,7 @@ tarif-non-adherent-liberal: 300
 ogdpc-reference: 32621500013 session 1
 duree: 2 jours en présentiel avec le formateur
 datePdf: vendredi 11 et samedi 12 mars 2016
-horaire: 9h à 17h (repas inclus)
+horaire: 9h à 17h30 (repas inclus)
 lieu: Auberge de jeunesse - 5 rue de Kerbriant - 29000 Brest
 effectif: 20
 ---
