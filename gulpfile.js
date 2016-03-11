@@ -7,45 +7,40 @@ var rev = require('gulp-rev');
 var revReplace = require('gulp-rev-replace');
 var gulpif = require('gulp-if');
 var useref = require('gulp-useref');
-var minifyCss = require('gulp-minify-css');
 var less = require('gulp-less');
 var autoprefixer  = require("gulp-autoprefixer");
-var html2pdf = require('gulp-html2pdf');
 var wkhtmltopdf = require('wkhtmltopdf');
 var debug = require('gulp-debug');
-// uglify = require('gulp-uglify'),
+var csso = require('gulp-csso');
 
 
-// gulp.task('copy', function () {
-// 
-//     del('src/content/posts/*.*');
-// 
-//     gulp.src([
-//         'src/content/formation/*.md',
-//         'src/content/prevention/*.md',
-//         'src/content/recherche/*.md'
-//     ])
-//         .pipe(gulp.dest('src/content/posts'));
-// });
-
-gulp.task('default', function () {
-
-    // var assets = useref.assets();
+gulp.task('css', function () {
 
     del('src/css');
     del(['src/markdownForPdf/**/', '!src/markdownForPdf']);
 
-    return gulp.src('layouts/partials/header.html')        
+    return gulp.src('layouts/partials/header.html')
+        // concat css files        
         .pipe(useref())
-        .pipe(debug({title: 'useref:'}))
+        // .pipe(debug({title: 'useref:'}))
+        // convert less to css
         .pipe(gulpif('*.css',less({ 
                 strictMath: true 
         })))
+        // add vendor prefixes
         .pipe(gulpif('*.css', autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         })))
+        // compress css
+        .pipe(gulpif('*.css', csso({
+            restructure: true,
+            sourceMap: false,
+            debug: false
+        })))
+        // add revision to css file
         .pipe(gulpif('*.css', rev()))
+        // replace into html file the name of css file with this revision.
         .pipe(revReplace())
         .pipe(gulpif('*.html', rename('header.concat.html')))
         .pipe(gulp.dest('layouts/partials'));
@@ -67,51 +62,20 @@ gulp.task('mv', function () {
     gulp.src(['dist/pages/adhesion/index.html'])
         .pipe(gulp.dest('dist/adhesion'));
     gulp.src(['dist/pages/qui-sommes-nous/index.html'])
-        .pipe(gulp.dest('dist/qui-sommes-nous'));        
-});
-
-gulp.task('html2pdf', function(){
-   
-    // création des contrats de formation en PDF
-    gulp.src(['dist-pdf/markdownForPdf/**/*.html'])
-        //.pipe(html2pdf())
+        .pipe(gulp.dest('dist/qui-sommes-nous'));
+        
+    gulp.src(['dist-pdf/markdownForPdf/**'])
         .pipe(gulp.dest('dist/formation'));
-    
-    // wkhtmltopdf("C:\Projets\orthophonie\dist-pdf\markdownForPdf\le-bilan-et-la-reeducation-vocale-le-timbre-en-question\contrat-formation-dpc.html")
 });
-
-
-function plugin(options) {
-    options = options || {};
-
-    return function (files, metalsmith, done) {
-        setImmediate(done);
-        
-        
-    //     Object.keys(files).forEach(function (file) {
-    //         
-    //         console.log(file);
-    //         // debug('checking file: %s', file);
-    //         //   if (!markdown(file)) return;
-    //         // if (file !== '') return;
-    //         
-    //         // var fileObj = path.parse(file)
-    //         // var fileData = files[file];
-    //         // // récupérer que les fichiers de type formation
-    //         // if (fileData.axe !== 'formation') return;
-    //         //  console.log(fileData);
-    // 
-    //     });
-    };
-}
 
 gulp.task('clean', function () {
 
     del([
         'dist/pages',
-        //'dist-pdf',
-        // 'src/content/posts/**',
-        // '!src/content/posts'
+        'dist-pdf/markdownForPdf/**',
+        '!dist-pdf/markdownForPdf',
+        'src/markdownForPdf/**',
+        '!src/markdownForPdf',
         ]);
 });
 

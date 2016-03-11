@@ -1,1 +1,1 @@
-cd dist & http-server
+cd dist & http-server & cd..

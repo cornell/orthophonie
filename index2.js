@@ -4,10 +4,7 @@ var metalsmith = require('metalsmith'),
     layouts = require('metalsmith-layouts'),
     myPlugin = require('metalsmith-my-plugin'),
     Handlebars = require('handlebars'),
-    fs = require('fs'),
-    multimatch = require('multimatch'),
-    filter = require('metalsmith-filter'),
-    html2pdf = require('gulp-html2pdf');
+    filter = require('metalsmith-filter');
 
 Handlebars.registerHelper('isSousTitre', function (options) {
     if (this["sous-titre"]) {
