@@ -12,6 +12,9 @@ var autoprefixer  = require("gulp-autoprefixer");
 var wkhtmltopdf = require('wkhtmltopdf');
 var debug = require('gulp-debug');
 var csso = require('gulp-csso');
+var imageresize = require('gulp-image-resize');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 
 gulp.task('css', function () {
