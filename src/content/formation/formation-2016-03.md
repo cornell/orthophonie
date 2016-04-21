@@ -26,6 +26,12 @@ datePdf: vendredi 11 et samedi 12 mars 2016
 horaire: 9h à 17h30 (repas inclus)
 lieu: Auberge de jeunesse - 5 rue de Kerbriant - 29000 Brest
 effectif: 20
+# photos de suite au déroulement de la formation
+photos:
+    - 01-formation.jpg
+    - 02-formation.jpg
+    - 03-formation.jpg
+    - 04-formation.jpg          
 ---
 
 ## Objectifs pédagogiques

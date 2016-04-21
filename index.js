@@ -85,6 +85,13 @@ Handlebars.registerHelper('isSalarie', function (options) {
         return options.inverse(this);
 });
 
+Handlebars.registerHelper('hasPhotos', function (options) {
+    if (this.photos)
+        return options.fn(this);
+    else
+        return options.inverse(this);
+});
+
 metalsmith(__dirname)
     .use(filter([
         'content/pages/*.md',
@@ -151,6 +158,7 @@ metalsmith(__dirname)
             axeFormation: 'partials/axe-formation',
             articleResume: 'partials/article-resume',
             articleInfo: 'partials/article-info',
+            photos: 'partials/photos',
             inscriptionTarif: 'partials/inscription-tarif'
         }
     }))
