@@ -18,40 +18,40 @@ var imageresize = require('gulp-image-resize');
 // var pngquant = require('imagemin-pngquant');
 
 
-gulp.task('css', function () {
+gulp.task('css', function() {
 
     del('src/css');
     del(['src/markdownForPdf/**/', '!src/markdownForPdf']);
 
     return gulp.src('layouts/partials/header.html')
-    // concat css files        
+        // concat css files        
         .pipe(useref())
-    // .pipe(debug({title: 'useref:'}))
-    // convert less to css
+        // .pipe(debug({title: 'useref:'}))
+        // convert less to css
         .pipe(gulpif('*.css', less({
             strictMath: true
         })))
-    // add vendor prefixes
+        // add vendor prefixes
         .pipe(gulpif('*.css', autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         })))
-    // compress css
+        // compress css
         .pipe(gulpif('*.css', csso({
             restructure: true,
             sourceMap: false,
             debug: false
         })))
-    // add revision to css file
+        // add revision to css file
         .pipe(gulpif('*.css', rev()))
-    // replace into html file the name of css file with this revision.
+        // replace into html file the name of css file with this revision.
         .pipe(revReplace())
         .pipe(gulpif('*.html', rename('header.concat.html')))
         .pipe(gulp.dest('layouts/partials'));
 
 });
 
-gulp.task('mv', function () {
+gulp.task('mv', function() {
 
     gulp.src(['dist/pages/index/index.html'])
         .pipe(gulp.dest('dist'));
@@ -72,7 +72,7 @@ gulp.task('mv', function () {
         .pipe(gulp.dest('dist/formation'));
 });
 
-gulp.task('clean', function () {
+gulp.task('clean', function() {
 
     del([
         'dist/pages',
@@ -83,7 +83,7 @@ gulp.task('clean', function () {
     ]);
 });
 
-gulp.task('replace', function () {
+gulp.task('replace', function() {
 
     gulp.src(['dist/index.html'])
         .pipe(replace('href="../../src/css/combined', 'href="css/combined'))
@@ -152,16 +152,16 @@ gulp.task('replace', function () {
 });
 
 
-gulp.task('image-resize', function () {
+gulp.task('image-resize', function() {
 
-	// set the folder name and the relative paths
-	// in the example the images are in ./assets/images
-	// and the public directory is ../public
-	var paths = {
-		folder: 'images/',
-		src: './assets/', 
-		dest: '../public/'
-	}    
+    // set the folder name and the relative paths
+    // in the example the images are in ./assets/images
+    // and the public directory is ../public
+    var paths = {
+        folder: './dist/formation/',
+        src: './src/content/formation/',
+        dest: './src/content/formation/formation-2016-03/'
+    }
 
     gulp.src('src/01-formation.jpg')
         .pipe(imageresize({
@@ -170,7 +170,7 @@ gulp.task('image-resize', function () {
             imageMagick: true
         }))
         .pipe(gulp.dest('dist'));
-        
+    /*
     gulp.src('src/01-formation.jpg')
         .pipe(imageresize({
             width: 100,
@@ -181,52 +181,36 @@ gulp.task('image-resize', function () {
             path.basename += "-thumbnail";
         }))
         .pipe(gulp.dest('dist'));        
-        
+        */
 });
 
 // images gulp task
-gulp.task('images', function () {
+gulp.task('images', function() {
 
-	// set the folder name and the relative paths
-	// in the example the images are in ./assets/images
-	// and the public directory is ../public
-	var paths = {
-		folder: 'images/',
-		src: './assets/', 
-		dest: '../public/'
-	}
+    gulp.src(['dist/formation/**/formation-*'])
+            .pipe(gulp.dest('dist/
+            '));
 
-	// create an array of image groups (see comments above)
-	// specifying the folder name, the ouput dimensions and
-	// whether or not to crop the images
-	var images = [
-		{ folder: 'formation', width: 1024 },
-		{ folder: 'formation', width: 100, thumbnail: true }
-	];	
-	
-    // loop through image groups		
-    images.forEach(function(image){
-    	
-        var f = filter(['**/*.jpg']);
-        
-        // grab all images from the folder
-        gulp.src('src/content/formation/**/*')
-    
-        .pipe(f)
-        
+    // set the folder name and the relative paths
+    // in the example the images are in ./src/content/formation/formation-2016-03
+    // and the public directory is ../public
+    var image = { width: 1024 }
+
+    var jpgFilter = filter(['**/*.jpg']);
+
+    // grab all images from the folder
+    gulp.src("dist/formation/*")
+        .pipe(jpgFilter)
+        .pipe(debug({ title: 'filter jpg: ' }))
         // resize them according to the width/height settings
         .pipe(imageresize({
-            width: image.width,
+            width: 1024,
             imageMagick: true
         }))
-        
-        .pipe(gulpif(image.thumbnail, rename(function (path) {
-            // console.log(path);
-            path.basename += "-thumbnail";
-        })))
-               
+        .pipe(rename(function(path) {
+            path.basename += "-normal";
+        }))
         // output each image to the dest path
         // maintaining the folder structure
-        .pipe(gulp.dest('dist/formation/images'));
-    });
+        .pipe(gulp.dest(paths.dest));
 });

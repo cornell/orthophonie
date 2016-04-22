@@ -97,10 +97,11 @@ metalsmith(__dirname)
         'content/pages/*.md',
         'content/prevention/*.md',
         'content/formation/*.md',
+        'content/formation/**', // copie répertoire images
         'content/recherche/*.md',
         'css/*.css',
         'font/*.*',
-        'js/*.js',
+        'js/**/*.js',
         'assets/documents/reglement-interieur-formation-apropos.pdf',
         'assets/documents/bulletin-adhesion-2016.pdf'
     ]))
