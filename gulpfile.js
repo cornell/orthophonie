@@ -1,3 +1,5 @@
+var fs = require('fs-extra')
+var path = require('path');
 var gulp = require('gulp');
 var del = require('del');
 var replace = require('gulp-replace');
@@ -188,8 +190,7 @@ gulp.task('image-resize', function() {
 gulp.task('images', function() {
 
     gulp.src(['dist/formation/**/formation-*'])
-            .pipe(gulp.dest('dist/
-            '));
+            .pipe(gulp.dest('dist/'));
 
     // set the folder name and the relative paths
     // in the example the images are in ./src/content/formation/formation-2016-03
@@ -214,3 +215,19 @@ gulp.task('images', function() {
         // maintaining the folder structure
         .pipe(gulp.dest(paths.dest));
 });
+
+
+gulp.task('rp', function(){
+    
+    gulp.src(['dist/formation/**/formation-*'])        
+        // renommer répertoires
+        .pipe(rename(function(path){
+            var dir =  __dirname + '/dist/formation/' + path.dirname + '/';
+            fs.renameSync( dir + path.basename, dir + 'images');
+        }))
+        .pipe(debug())
+        // supprimer répertoires obsolètes
+        .pipe(vinylPaths(del))
+        .pipe(gulp.dest('dist'));
+  
+})
