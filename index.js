@@ -95,9 +95,10 @@ Handlebars.registerHelper('hasPhotos', function (options) {
 metalsmith(__dirname)
     .use(filter([
         'content/pages/*.md',
-        'content/prevention/*.md',
+        'content/prevention/**/*.md',
         'content/formation/*.md',
-        'content/formation/**', // copie répertoire images
+        'content/formation/**', // copie les sous répertoire
+        '!content/formation/2015', // sauf 2015
         'content/recherche/*.md',
         'css/*.css',
         'font/*.*',
@@ -110,7 +111,7 @@ metalsmith(__dirname)
             pattern: 'content/pages/*.md'
         },
         prevention: {
-            pattern: 'content/prevention/*.md',
+            pattern: 'content/prevention/**/*.md',
             reverse: true
         },
         recherche: {
@@ -118,7 +119,7 @@ metalsmith(__dirname)
             reverse: true
         },
         formation: {
-            pattern: 'content/formation/*.md',
+            pattern: 'content/formation/**/*.md',
             reverse: true
         }
     }))
